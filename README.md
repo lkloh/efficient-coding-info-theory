@@ -1,4 +1,4 @@
 efficient-coding-info-theory
 ============================
 
-paper
+[Course Webpage](http://users.ece.cmu.edu/~pgrover/teaching/networks.html)
