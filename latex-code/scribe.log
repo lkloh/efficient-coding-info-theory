@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  7 SEP 2014 18:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  7 SEP 2014 19:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -360,26 +360,26 @@ File: block.tss 2011/12/15
 (./scribe.aux)
 \openout1 = `scribe.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Try loading font information for T1+pplx on input line 67.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Try loading font information for T1+pplx on input line 61.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/t1pplx.fd
 File: t1pplx.fd 2004/09/06 font definitions for T1/pplx.
 )
 \big@size=\dimen162
-LaTeX Info: Redefining \microtypecontext on input line 67.
+LaTeX Info: Redefining \microtypecontext on input line 61.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -433,7 +433,7 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box57
-Package hyperref Info: Link coloring OFF on input line 67.
+Package hyperref Info: Link coloring OFF on input line 61.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -442,41 +442,41 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count120
 )
-LaTeX Info: Redefining \ref on input line 67.
-LaTeX Info: Redefining \pageref on input line 67.
-LaTeX Info: Redefining \nameref on input line 67.
+LaTeX Info: Redefining \ref on input line 61.
+LaTeX Info: Redefining \pageref on input line 61.
+LaTeX Info: Redefining \nameref on input line 61.
 
 (./scribe.out) (./scribe.out)
 \@outlinefile=\write3
 \openout3 = `scribe.out'.
 
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <24> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 70.
-LaTeX Font Info:    Try loading font information for OT1+pplx on input line 70.
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 64.
+LaTeX Font Info:    Try loading font information for OT1+pplx on input line 64.
 
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1pplx.fd
 File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 70.
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 64.
 
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 70.
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 64.
 
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 70.
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 64.
 
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 70.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 64.
 
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1zplm.fd
@@ -487,7 +487,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <10> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 77.
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 74.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplx/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -497,42 +497,70 @@ Package microtype Info: Character `029' is missing
  [1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
+LaTeX Font Info:    Try loading font information for U+fplmbb on input line 124
+.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ufplmbb.fd
+File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
+)
+Overfull \hbox (107.68625pt too wide) detected at line 130
+[][]\OML/zplm/m/it/10 I \OT1/zplm/m/n/10 = \OMS/zplm/m/n/10 ^^@ [] \U/fplmbb/m/
+n/10 P\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 r[]\OT1/pplx/m/n/10 , \OML/zplm/m/it/
+10 r[]\OT1/zplm/m/n/10 ) [][] \U/fplmbb/m/n/10 P\OT1/zplm/m/n/10 (\OML/zplm/m/i
+t/10 r[]\OT1/pplx/m/n/10 , \OML/zplm/m/it/10 r[]\OT1/zplm/m/n/10 ) + [] \U/fplm
+bb/m/n/10 P\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 s\OT1/zplm/m/n/10 ) [] \U/fplmbb
+/m/n/10 P\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 r[]\OT1/pplx/m/n/10 , \OML/zplm/m/
+it/10 r[]\OMS/zplm/m/n/10 j\OML/zplm/m/it/10 s\OT1/zplm/m/n/10 ) [][] \U/fplmbb
+/m/n/10 P\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 r[]\OT1/pplx/m/n/10 , \OML/zplm/m/
+it/10 r[]\OMS/zplm/m/n/10 j\OML/zplm/m/it/10 s\OT1/zplm/m/n/10 )[]
+ []
+
+
+Underfull \hbox (badness 6995) in paragraph at lines 132--133
+[]\T1/pplx/m/n/10 (+20) where $\U/fplmbb/m/n/10 P\OT1/zplm/m/n/10 (\OML/zplm/m/
+it/10 r[]\OT1/pplx/m/n/10 (+20) , \OML/zplm/m/it/10 r[]\OT1/zplm/m/n/10 )$ \T1/
+pplx/m/n/10 (+20) is found by tak-ing
+ []
+
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <9> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 111.
- [2]
-Underfull \hbox (badness 10000) in paragraph at lines 175--178
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 145.
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 216--219
 []\T1/pplx/m/n/10 (+20) Nirenberg, S.,
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 185.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 229.
 [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 185.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 229.
  (./scribe.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 185.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 185.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 229.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 229.
 Package rerunfilecheck Info: File `scribe.out' has not changed.
 (rerunfilecheck)             Checksum: 0062CE255100133F6F34A6038ECB472B;353.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 185.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 229.
  ) 
 Here is how much of TeX's memory you used:
- 8798 strings out of 493117
- 135970 string characters out of 6135433
- 345408 words of memory out of 5000000
- 11902 multiletter control sequences out of 15000+600000
- 64885 words of font info for 248 fonts, out of 8000000 for 9000
+ 8836 strings out of 493117
+ 136433 string characters out of 6135433
+ 348505 words of memory out of 5000000
+ 11911 multiletter control sequences out of 15000+600000
+ 69004 words of font info for 272 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,13n,43p,869b,646s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,13n,43p,948b,534s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/tex
-live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
-ive/2014/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2014
-/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2014/texmf-
-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2014/texmf-dist/fo
-nts/type1/urw/palatino/uplri8a.pfb>
-Output written on scribe.pdf (3 pages, 86790 bytes).
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2014/t
+exmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2014/texmf-dis
+t/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts
+/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/
+urw/palatino/uplri8a.pfb>
+Output written on scribe.pdf (3 pages, 104295 bytes).
 PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
- 69 compressed objects within 1 object stream
+ 93 PDF objects out of 1000 (max. 8388607)
+ 78 compressed objects within 1 object stream
  17 named destinations out of 1000 (max. 500000)
  53297 words of extra memory for PDF output out of 61914 (max. 10000000)
 

@@ -1,22 +1,6 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Journal Article
-% LaTeX Template
-% Version 1.3 (9/9/13)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Frits Wenneker (http://www.howtotex.com)
-%
-% License:
-% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
+% ---------------------------------------------------- %
+%                CONFIGURATION                         %
+% ---------------------------------------------------- %
 
 \documentclass[twoside]{article}
 
@@ -51,18 +35,28 @@
 \pagestyle{fancy} % All pages have headers and footers
 \fancyhead{} % Blank out the default header
 \fancyfoot{} % Blank out the default footer
-\fancyhead[C]{Running title $\bullet$ November 2012 $\bullet$ Vol. XXI, No. 1} % Custom header text
+\fancyhead[C]{Efficient Coding Hypothesis and an Introduction to Information Theory $\star$ September 2014} % Custom header text
 \fancyfoot[RO,LE]{\thepage} % Custom footer text
 
-%----------------------------------------------------------------------------------------
-%	TITLE SECTION
-%----------------------------------------------------------------------------------------
+% ---------------------------------------------------- %
+%                CONFIGURATION                         %
+% ---------------------------------------------------- %
+
+
+
+% ---------------------------------------------------- %
+%                   	TITLE                          %
+% ---------------------------------------------------- %
 
 \title{\vspace{-15mm}\fontsize{24pt}{10pt}\selectfont\textbf{Efficient Coding Hypothesis and an introduction to information Theory}} % Article title
 \author{Lay Kuan Loh \& Mihovil Bartulovic}
 \date{\today}
 
-%----------------------------------------------------------------------------------------
+% ---------------------------------------------------- %
+%                   	TITLE                          %
+% ---------------------------------------------------- %
+
+
 
 \begin{document}
 
@@ -70,9 +64,12 @@
 
 \thispagestyle{fancy} % All pages have headers and footers
 
-%----------------------------------------------------------------------------------------
-%	ABSTRACT
-%----------------------------------------------------------------------------------------
+
+
+
+% ---------------------------------------------------- %
+%                   	ABSTRACT                       %
+% ---------------------------------------------------- %
 
 \begin{abstract}
 
@@ -80,18 +77,37 @@
 
 \end{abstract}
 
-%----------------------------------------------------------------------------------------
-%	ARTICLE CONTENTS
-%----------------------------------------------------------------------------------------
+% ---------------------------------------------------- %
+%                   	ABSTRACT                       %
+% ---------------------------------------------------- %
+
+
+
+
+
+
+
+
+% ---------------------------------------------------- %
+%                   	INTRODUCTION                   %
+% ---------------------------------------------------- %
 
 \begin{multicols}{2} % Two-column layout throughout the main article text
 
 \section{Introduction}
 
 \lettrine[nindent=0em,lines=3]{L} orem ipsum dolor sit amet, consectetur adipiscing elit.
-\lipsum[2-3] % Dummy text
+\lipsum[2-3] 
 
-%------------------------------------------------
+% ---------------------------------------------------- %
+%                   	INTRODUCTION                   %
+% ---------------------------------------------------- %
+
+
+
+% ---------------------------------------------------- %
+%                	NIRENBERG 2001                     %
+% ---------------------------------------------------- %
 
 \section{Retinal ganglion cells act largely as independent encoders}
 
@@ -99,11 +115,29 @@ Correlated firing among neurons is widespread in the visual system. Neighbouring
 
 It has been hypothesized that correlated activity can carry information. To test this, Nirenberg et. al., 2001 used information theory techniques to compare the amount of information that could be obtained from pairs when their correlations were accounted for, as opposed to when they are not. The extent of information loss when correlations were ignored was examined, and it was found that little information was lost when correlations were ignored. 
 
-To perform the study, Nirenberg et. al., 2001 stimulated pairs of isolated mouse retina using natural movies. The stimuli were each 7 seconds long and repeated 300 times, and the ganglion cell responses were recorded with a multielectrode array. 
+To perform the study, Nirenberg et. al., 2001 stimulated pairs of isolated mouse retina using natural movies. The stimuli were each 7 seconds long and repeated 300 times, and the ganglion cell responses were recorded with a multielectrode array with closely spaced electrodes to record from many neighboring ganglion cells, which tend to have overlapping receptive fields and show correlated activity. 
+
+Data used had to be clean of contaminating spikes from other cells, and that both responses had to have average firing rates of above 0.5 Hz. 
+
+To find the degree of correlated activity for each pair, the excess correlated fraction (ECF) was found. This is the fraction of correlated spikes produced by the pair above chance, taking into account correlations induced by the stimulus, was found. 
+
+To measure the amount of information the pairs of ganglion cells carried about the stimuli when their correlations were taken into account, standard information theoretic techniques were used. Each movie was treated as a series of segments of fixed temporal length, with each segment regarded as a separate stimulus. We presented the movie several hundred times to generate a large set of responses (spike trains) to each segment. This allowed us to estimate the probability of getting a particular pair of responses given a particular movie segmentÐthat is, to estimate $\mathbb{P}(r_1,r_2|s)$, where $r_1$ was the response of cell 1, $r_2$ was the response of cell 2 and $s$ was the movie segment. Given these conditional probabilities, the amount of information $I$ between the responses and the stimulus segments was found using the standard expression
+
+\begin{equation}
+	\label{eq:ganglion-info}
+	I = -\sum_{r_1,r_2}\mathbb{P}(r_1,r_2)\log_2\mathbb{P}(r_1,r_2)
+		+\sum_s\mathbb{P}(s) \sum_{r_1,r_2}\mathbb{P}(r_1,r_2|s)\log_2\mathbb{P}(r_1,r_2|s)
+\end{equation}
+
+where $\mathbb{P}(r_1,r_2)$ is found by taking $\mathbb{P}(r_1,r_2) = \sum_s \mathbb{P}(r_1,r_2|s)\mathbb{P}(s)$, and $\mathbb{P}(s)$ is the probability that a given stimulus segment $s$ occured. 
+
+To examine how important correlation is in encoding visual information, 
 
 
 
-%------------------------------------------------
+% ---------------------------------------------------- %
+%                	NIRENBERG 2001                     %
+% ---------------------------------------------------- %
 
 \section{Results}
 
@@ -131,7 +165,10 @@ e = mc^2
 
 \lipsum[6] % Dummy text
 
-%------------------------------------------------
+
+% ---------------------------------------------------- %
+%                    	DISCUSSION                     %
+% ---------------------------------------------------- %
 
 \section{Discussion}
 
@@ -143,17 +180,21 @@ e = mc^2
 
 \lipsum[8] % Dummy text
 
-%----------------------------------------------------------------------------------------
-%	REFERENCE LIST
-%----------------------------------------------------------------------------------------
+% ---------------------------------------------------- %
+%                    	DISCUSSION                     %
+% ---------------------------------------------------- %
 
-\begin{thebibliography}{99} % Bibliography - this is intentionally simple in this template
 
-\bibitem[Figueredo and Wolf, 2009]{Figueredo:2009dg}
-Figueredo, A.~J. and Wolf, P. S.~A. (2009).
-\newblock Assortative pairing and life history strategy - a cross-cultural
-  study.
-\newblock {\em Human Nature}, 20:317--330.
+
+
+
+
+
+% ---------------------------------------------------- %
+%                 	REFERENCE LIST                     %
+% ---------------------------------------------------- %
+
+\begin{thebibliography}{99} 
 
 \bibitem[Simoncelli 2003]{Simoncelli:2003dg}
 Simoncelli, E.~P. (2003).
@@ -178,8 +219,14 @@ Nirenberg, S., Carcieri, S.~M., Jacobs, A.~L., \& Latham, P.~E. (2001).
  
 \end{thebibliography}
 
-%----------------------------------------------------------------------------------------
+% ---------------------------------------------------- %
+%                 	REFERENCE LIST                     %
+% ---------------------------------------------------- %
+
 
 \end{multicols}
 
 \end{document}
+
+
+% ---------------------------------------------------- %
