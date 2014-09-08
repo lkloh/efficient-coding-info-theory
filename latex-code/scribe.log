@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  7 SEP 2014 19:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  7 SEP 2014 23:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -503,64 +503,63 @@ LaTeX Font Info:    Try loading font information for U+fplmbb on input line 124
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 )
-Overfull \hbox (107.68625pt too wide) detected at line 130
-[][]\OML/zplm/m/it/10 I \OT1/zplm/m/n/10 = \OMS/zplm/m/n/10 ^^@ [] \U/fplmbb/m/
-n/10 P\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 r[]\OT1/pplx/m/n/10 , \OML/zplm/m/it/
-10 r[]\OT1/zplm/m/n/10 ) [][] \U/fplmbb/m/n/10 P\OT1/zplm/m/n/10 (\OML/zplm/m/i
-t/10 r[]\OT1/pplx/m/n/10 , \OML/zplm/m/it/10 r[]\OT1/zplm/m/n/10 ) + [] \U/fplm
-bb/m/n/10 P\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 s\OT1/zplm/m/n/10 ) [] \U/fplmbb
-/m/n/10 P\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 r[]\OT1/pplx/m/n/10 , \OML/zplm/m/
-it/10 r[]\OMS/zplm/m/n/10 j\OML/zplm/m/it/10 s\OT1/zplm/m/n/10 ) [][] \U/fplmbb
-/m/n/10 P\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 r[]\OT1/pplx/m/n/10 , \OML/zplm/m/
-it/10 r[]\OMS/zplm/m/n/10 j\OML/zplm/m/it/10 s\OT1/zplm/m/n/10 )[]
- []
-
-
-Underfull \hbox (badness 6995) in paragraph at lines 132--133
+Underfull \hbox (badness 6995) in paragraph at lines 133--134
 []\T1/pplx/m/n/10 (+20) where $\U/fplmbb/m/n/10 P\OT1/zplm/m/n/10 (\OML/zplm/m/
 it/10 r[]\OT1/pplx/m/n/10 (+20) , \OML/zplm/m/it/10 r[]\OT1/zplm/m/n/10 )$ \T1/
 pplx/m/n/10 (+20) is found by tak-ing
  []
 
-LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <9> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 145.
+
+Overfull \hbox (34.301pt too wide) in alignment at lines 139--143
+ [][][] []
+ []
+
+
+Overfull \hbox (16.97308pt too wide) in alignment at lines 146--151
+ [][][] []
+ []
+
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 216--219
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <9> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 166.
+ [3]
+Underfull \hbox (badness 10000) in paragraph at lines 237--240
 []\T1/pplx/m/n/10 (+20) Nirenberg, S.,
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 229.
-[3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 229.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 250.
+[4]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 250.
  (./scribe.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 229.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 229.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 250.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 250.
 Package rerunfilecheck Info: File `scribe.out' has not changed.
 (rerunfilecheck)             Checksum: 0062CE255100133F6F34A6038ECB472B;353.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 229.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 250.
  ) 
 Here is how much of TeX's memory you used:
- 8836 strings out of 493117
- 136433 string characters out of 6135433
- 348505 words of memory out of 5000000
- 11911 multiletter control sequences out of 15000+600000
+ 8835 strings out of 493117
+ 136405 string characters out of 6135433
+ 348421 words of memory out of 5000000
+ 11910 multiletter control sequences out of 15000+600000
  69004 words of font info for 272 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,13n,43p,948b,534s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,13n,43p,948b,548s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
 ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
 ve/2014/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/local/texlive/2
 014/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2014/t
-exmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2014/texmf-dis
-t/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts
-/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/
-urw/palatino/uplri8a.pfb>
-Output written on scribe.pdf (3 pages, 104295 bytes).
+exmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2014/texmf
+-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2014/texmf-dist/fo
+nts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
+e1/urw/palatino/uplr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/
+palatino/uplri8a.pfb>
+Output written on scribe.pdf (4 pages, 109839 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
+ 100 PDF objects out of 1000 (max. 8388607)
+ 83 compressed objects within 1 object stream
  17 named destinations out of 1000 (max. 500000)
  53297 words of extra memory for PDF output out of 61914 (max. 10000000)
 
