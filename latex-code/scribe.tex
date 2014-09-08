@@ -5,7 +5,7 @@
 \documentclass[twoside]{article}
 
 \usepackage{lipsum} % Package to generate dummy text throughout this template
-
+\usepackage{amsmath}
 \usepackage[sc]{mathpazo} % Use the Palatino font
 \usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
 \linespread{1.05} % Line spacing - Palatino needs more space between lines
@@ -111,23 +111,20 @@
 
 \section{Retinal ganglion cells act largely as independent encoders}
 
-Correlated firing among neurons is widespread in the visual system. Neighbouring neurons, in areas from retina to cortex, tend to fire together more often than would be expected by chance. The importance of this correlated firing for encoding visual information is unclear. To study this, Nirenberg et. al., 2001 presented the retina with natural stimuli and computer the responses of the ganglion (output) cells. They used information theoretic techniques to measure the amount of information about the stimuli that can be obtained from the cells under correlated firing and non-correlated firing. They found that more than 90\% of the information about the stimuli can be obtained from the cells with uncorrelated firing, suggesting that ganglion cells act largely independently to encode information, simplifying the problem of decoding their activity. 
+Correlated firing among neurons is widespread in the visual system, but its importance for encoding visual information is unclear. To study this, Nirenberg et. al., 2001 presented the retina with natural stimuli and computed the responses of the output cells, the ganglion cells. They used information theoretic techniques to measure the amount of information about the stimuli that can be obtained from the cells under correlated firing and non-correlated firing. They found that more than 90\% of the information about the stimuli can be obtained from the cells with uncorrelated firing, suggesting that ganglion cells act largely independently to encode information, simplifying the problem of decoding their activity. 
 
-It has been hypothesized that correlated activity can carry information. To test this, Nirenberg et. al., 2001 used information theory techniques to compare the amount of information that could be obtained from pairs when their correlations were accounted for, as opposed to when they are not. The extent of information loss when correlations were ignored was examined, and it was found that little information was lost when correlations were ignored. 
+Nirenberg et. al., 2001 stimulated pairs of isolated mouse retina using natural movies. The stimuli were each 7 seconds long and repeated 300 times, and the ganglion cell responses were recorded. Data used had to be clean of contaminating spikes from other cells, and that both responses had to have average firing rates. 
 
-To perform the study, Nirenberg et. al., 2001 stimulated pairs of isolated mouse retina using natural movies. The stimuli were each 7 seconds long and repeated 300 times, and the ganglion cell responses were recorded with a multielectrode array with closely spaced electrodes to record from many neighboring ganglion cells, which tend to have overlapping receptive fields and show correlated activity. 
+To find the degree of correlated activity for each pair, the excess correlated fraction (ECF) was found. ECF is the fraction of correlated spikes produced by the pair above chance, taking into account correlations induced by the stimulus. The ECFs ranged from -1\% to 34\%. 
 
-Data used had to be clean of contaminating spikes from other cells, and that both responses had to have average firing rates of above 0.5 Hz. 
-
-To find the degree of correlated activity for each pair, the excess correlated fraction (ECF) was found. This is the fraction of correlated spikes produced by the pair above chance, taking into account correlations induced by the stimulus, was found. The ECFs ranged from -1\% to 34\%, similar to other mammalian species. 
-
-To measure the amount of information the pairs of ganglion cells carried about the stimuli when their correlations were taken into account, standard information theoretic techniques were used. Each movie was treated as a series of segments of fixed temporal length, with each segment regarded as a separate stimulus. We presented the movie several hundred times to generate a large set of responses (spike trains) to each segment. This allowed us to estimate the probability of getting a particular pair of responses given a particular movie segmentÐthat is, to estimate $\mathbb{P}(r_1,r_2|s)$, where $r_1$ was the response of cell 1, $r_2$ was the response of cell 2 and $s$ was the movie segment. Given these conditional probabilities, the amount of information $I$ between the responses and the stimulus segments was found using the standard expression
+To measure the amount of information the pairs of ganglion cells carried about the stimuli when their correlations were taken into account, information theoretic techniques were used. Each movie was treated as a series of segments of fixed temporal length, with each segment regarded as a separate stimulus. The movie was presented several hundred times to generate a large set of responses (spike trains) to each segment. This allowed the authors to estimate the probability of getting a particular pair of responses given a particular movie segment - that is, to estimate $\mathbb{P}(r_1,r_2|s)$, where $r_1$ was the response of cell 1, $r_2$ was the response of cell 2 and $s$ was the movie segment. Given these conditional probabilities, the amount of information $I$ between the responses and the stimulus segments was found using the expression:
 
 
-\begin{eqnarray*}
-I &=& -\sum_{r_1,r_2}\mathbb{P}(r_1,r_2)\log_2\mathbb{P}(r_1,r_2) \\
-  && +\sum_s\mathbb{P}(s) \sum_{r_1,r_2}\mathbb{P}(r_1,r_2|s)\log_2\mathbb{P}(r_1,r_2|s) \\
-\end{eqnarray*}
+\begin{align}\label{eq:info-theory}
+	I 
+		&= -\sum_{r_1,r_2}\mathbb{P}(r_1,r_2)\log_2\mathbb{P}(r_1,r_2) \\
+  		&+ \sum_s\mathbb{P}(s) \sum_{r_1,r_2}\mathbb{P}(r_1,r_2|s)\log_2\mathbb{P}(r_1,r_2|s)
+\end{align}
 
 
 where $\mathbb{P}(r_1,r_2)$ is found by taking $\mathbb{P}(r_1,r_2) = \sum_s \mathbb{P}(r_1,r_2|s)\mathbb{P}(s)$, and $\mathbb{P}(s)$ is the probability that a given stimulus segment $s$ occured. 
@@ -136,25 +133,23 @@ To examine how important correlation is in encoding visual information, the amou
 
 Therefore, the amount of independent information is given by
 
-\begin{eqnarray*}
+\begin{align}
 	I_{IND} 
-		&=& -\sum_{r_1,r_2}\mathbb{P}(r_1,r_2|s)\log_2\mathbb{P}(r_1|s)\mathbb{P}(r_2|s) \\
-		&& + \sum_s\mathbb{P}(s) \sum_{r_1,r_2}\mathbb{P}(r_1,r_2|s)\log_2\mathbb{P}(r_1|s)\mathbb{P}(r_2|s) \\
-\end{eqnarray*}
+		&= -\sum_{r_1,r_2}\mathbb{P}(r_1,r_2|s)\log_2\mathbb{P}(r_1|s)\mathbb{P}(r_2|s) \\
+		&+ \sum_s\mathbb{P}(s) \sum_{r_1,r_2}\mathbb{P}(r_1,r_2|s)\log_2\mathbb{P}(r_1|s)\mathbb{P}(r_2|s) 
+\end{align}
 
 The amount of information in bits lost, $\Delta I$, is given by 
-\begin{eqnarray*}
-	\delta I 
-		&=& I - I_{IND} \\
-		&=& \sum_s\mathbb{P}(s) \sum_{r_1,r_2}\mathbb{P}(r_1,r_2|s) \log_2 \frac{\mathbb{P}(r_1,r_2|s)}{\mathbb{P}(r_1|s)\mathbb{P}(r_2|s)} \\
-		&& - \sum_{r_1,r_2}\mathbb{P}(r_1,r_2) \log_2 \frac{\mathbb{P}(r_1,r_2)}{\sum_s \mathbb{P}(r_1|s)\mathbb{P}(r_2|s) \mathbb{P}(s)} \\
-\end{eqnarray*}
+\begin{align}
+	\Delta I 
+		&= I - I_{IND} \\
+		&= \sum_s\mathbb{P}(s) \sum_{r_1,r_2}\mathbb{P}(r_1,r_2|s) \log_2 \frac{\mathbb{P}(r_1,r_2|s)}{\mathbb{P}(r_1|s)\mathbb{P}(r_2|s)} \\
+		&- \sum_{r_1,r_2}\mathbb{P}(r_1,r_2) \log_2 \frac{\mathbb{P}(r_1,r_2)}{\sum_s \mathbb{P}(r_1|s)\mathbb{P}(r_2|s) \mathbb{P}(s)} 
+\end{align}
 
-$\Delta I$ is very small, as most pairs lost less than 10\% of information. If there were pairs of ganglion cells with higher degrees of correlation than the maximum 34\% observed, more information loss could have occured. This finding means that strategies used to decode ganglion cell activity, which treat the cells as independent encoders are reasonable, as they can capture more than 90\% of the information the cells carry. Furthermore, the activity of any given ganglion cell can be evaluated separately from other cells, without accounting for other cells in the population. Thus, the data needed to determinte the information carried by a population of cells scales linearly with the number of cells, as opposed to quadratically at best and exponentially at works for the correlated case. This allows the problem of decoding population activity to be significanly simplified. 
+$\Delta I$ is very small, as most pairs lost less than 10\% of information. If there were pairs of ganglion cells with higher degrees of correlation than the maximum 34\% observed, more information loss could have occured. This finding means that strategies used to decode ganglion cell activity, which treat the cells as independent encoders are reasonable, as they can capture more than 90\% of the information the cells carry. Furthermore, the activity of any given ganglion cell can be evaluated separately from other cells, without accounting for other cells in the population. This allows the problem of decoding population activity to be significanly simplified, as much less data is needed to analyze the uncorrelated case as opposed to the correlated case. 
 
-Several concerns with the study are that capturing more than 90\% in ganglion cell activity may not be enough to fully understand its activity, though for now it is sufficient for current research to focus on the part of the activity that carries most of the information. Also, perhaps correlation should not be ignored for the activity of a larger population of cells than just pairs of cells studied here. 
-
-
+Several concerns with the study are that capturing more than 90\% in ganglion cell activity may not be enough to fully understand its activity. Also, perhaps correlation should not be ignored for the activity of a larger population of cells than just pairs of cells studied here. 
 
 % ---------------------------------------------------- %
 %                	NIRENBERG 2001                     %
