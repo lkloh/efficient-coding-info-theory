@@ -99,7 +99,7 @@
 \section{Introduction}
 
 \lettrine[nindent=0em,lines=3]{L} orem ipsum dolor sit amet, consectetur adipiscing elit.
-\lipsum[2-3] 
+
 
 % ---------------------------------------------------- %
 %                   	INTRODUCTION                   %
@@ -187,11 +187,15 @@ Neurons carry and process information. Large monopolar cells (LMC's) are first o
 
 A fundamental limitation on neural coding is the restricted range of responses with which a neuron can represent the states of its inputs. The LMC cell's response range is limited by reversal potentials. If the sensitivities of a neuron are too high, inputs would often saturate the response, and informatio will be lost through clipping. If the sensitivities are too low, large parts of the response range are underutilized because they correspond to exceptionally large ranges of input. Information theory suggests that the most efficient way to apportion the neuron's limited response range is to encode inputs so that all response levels are used with equal frequency. Thus, information carried by the responses can be maximised because the information channel achieves its maximum entropy. 
 
-The simplest case is when a neuron represents a single input parameter with a single output parameter. For this case, the optimum can be reaches when the input-output function corresponds to the cumulative probability function for the different input levels. 
+The simplest case is when a neuron represents a single input parameter with a single output parameter. For this case, the optimum can be reaches when the input-output function corresponds to the cumulative probability function for the different input levels. This procedure amplifies inputs in proportion to their expected frequeny of occurence, using the response range for the better resolution of common events, and small portions for the improbable. 
+
+To test this hypothesis, Laughlin used first order interneurons of the blowfly's compound eye 
 
 \begin{figure}[H]
-	\caption{This is a caption}
-	\includegraphics[width=0.5\textwidth]{laughlin1981-fig1}
+	\caption{
+		\textsc{Upper diagram:} Probability density function for stimulus intensities. \\ \textsc{Lower diagram:} Intensity-response function that implements the strategy. \\ Maxmimizing a neuron's information capacity by ensuring that all response levels are used with equal frequency. Intervals between each response level encompasses an equal area under the intensity distribution, so each state is used with equal frequency.
+	}
+	\includegraphics[width=0.45\textwidth]{laughlin1981-fig1}
 	\label{fig:laughlin1981-fig1}
 \end{figure}
 

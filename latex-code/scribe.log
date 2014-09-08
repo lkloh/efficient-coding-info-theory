@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  8 SEP 2014 09:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  8 SEP 2014 09:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -608,39 +608,240 @@ LaTeX Font Info:    Try loading font information for U+fplmbb on input line 138
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 ) [1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-] [2]
+]
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <9> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 193.
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 197.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/pplx/m/sc/9'.
+(microtype)             Ignoring protrusion settings for this character.
 
-<laughlin1981-fig1.png, id=49, 347.2975pt x 416.55624pt>
+<laughlin1981-fig1.png, id=40, 347.2975pt x 416.55624pt>
 File: laughlin1981-fig1.png Graphic file (type png)
 
 <use laughlin1981-fig1.png>
-Package pdftex.def Info: laughlin1981-fig1.png used on input line 194.
-(pdftex.def)             Requested size: 249.33128pt x 299.06218pt.
+Package pdftex.def Info: laughlin1981-fig1.png used on input line 198.
+(pdftex.def)             Requested size: 224.39664pt x 269.1566pt.
+ [2]
+Overfull \vbox (58.10597pt too high) has occurred while \output is active []
 
-Overfull \hbox (10.0pt too wide) in paragraph at lines 194--196
-[][]
- []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 257.
+Overfull \vbox (58.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (57.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (57.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (56.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (56.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (55.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (55.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (54.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (54.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (53.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (53.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (52.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (52.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (51.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (51.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (50.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (50.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (49.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (49.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (48.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (48.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (47.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (47.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (46.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (46.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (45.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (45.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (44.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (44.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (43.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (43.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (42.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (42.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (41.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (41.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (40.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (40.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (39.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (39.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (38.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (38.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (37.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (37.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (36.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (36.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (35.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (35.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (34.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (34.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (33.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (33.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (32.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (32.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (31.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (31.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (30.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (30.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (29.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (29.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (28.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (28.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (27.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (27.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (26.10597pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (26.10597pt too high) has occurred while \output is active []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 261.
+
 [3 <./laughlin1981-fig1.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 257.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 261.
  (./scribe.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 257.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 257.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 261.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 261.
 Package rerunfilecheck Info: File `scribe.out' has not changed.
 (rerunfilecheck)             Checksum: 41E4A2CCBF4243D13D917012DD5578E5;432.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 257.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 261.
  ) 
 Here is how much of TeX's memory you used:
- 10231 strings out of 493117
- 154526 string characters out of 6135433
- 370208 words of memory out of 5000000
- 13251 multiletter control sequences out of 15000+600000
- 70902 words of font info for 273 fonts, out of 8000000 for 9000
+ 10262 strings out of 493117
+ 154837 string characters out of 6135433
+ 369598 words of memory out of 5000000
+ 13253 multiletter control sequences out of 15000+600000
+ 77137 words of font info for 294 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,10n,43p,942b,575s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,10n,43p,942b,586s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
@@ -651,10 +852,10 @@ exmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2014/texmf-dis
 t/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts
 /type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/
 urw/palatino/uplri8a.pfb>
-Output written on scribe.pdf (3 pages, 139159 bytes).
+Output written on scribe.pdf (3 pages, 139818 bytes).
 PDF statistics:
  96 PDF objects out of 1000 (max. 8388607)
  80 compressed objects within 1 object stream
  21 named destinations out of 1000 (max. 500000)
- 57390 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 65582 words of extra memory for PDF output out of 74296 (max. 10000000)
 
