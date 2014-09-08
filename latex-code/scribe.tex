@@ -187,9 +187,7 @@ Neurons carry and process information. Large monopolar cells (LMC's) are first o
 
 A fundamental limitation on neural coding is the restricted range of responses with which a neuron can represent the states of its inputs. The LMC cell's response range is limited by reversal potentials. If the sensitivities of a neuron are too high, inputs would often saturate the response, and informatio will be lost through clipping. If the sensitivities are too low, large parts of the response range are underutilized because they correspond to exceptionally large ranges of input. Information theory suggests that the most efficient way to apportion the neuron's limited response range is to encode inputs so that all response levels are used with equal frequency. Thus, information carried by the responses can be maximised because the information channel achieves its maximum entropy. 
 
-The simplest case is when a neuron represents a single input parameter with a single output parameter. For this case, the optimum can be reaches when the input-output function corresponds to the cumulative probability function for the different input levels. This procedure amplifies inputs in proportion to their expected frequeny of occurence, using the response range for the better resolution of common events, and small portions for the improbable. 
-
-To test this hypothesis, Laughlin used first order interneurons of the blowfly's compound eye 
+The simplest case is when a neuron represents a single input parameter with a single output parameter. For this case, the optimum can be reaches when the input-output function corresponds to the cumulative probability function for the different input levels. This procedure amplifies inputs in proportion to their expected frequeny of occurence, using the response range for the better resolution of common events, and small portions for the improbable~\ref{fig:laughlin1981-fig1}. 
 
 \begin{figure}[H]
 	\caption{
@@ -199,7 +197,17 @@ To test this hypothesis, Laughlin used first order interneurons of the blowfly's
 	\label{fig:laughlin1981-fig1}
 \end{figure}
 
+To test this hypothesis, Laughlin compared contrast-response functions with contrast levels measured in natural scenes, such as lakeside vegetation, in first order interneurons of the blowfly's compound eye. Relative intensities were measured accross the scenes with a detector with spectral sensitivity similar to a fly monopolar cell. Contrast values were obtained by dividing each scan into intervals of 10, 25, or $50^\circ$. Within each interval the ean intensity $\bar{I}$ was found, and subtracted from every data point to give the fluctuation about the mean $\delta I$, and then the contrast $\displaystyle\frac{\Delta I}{\bar{I}}$ was found. The range of contrasts increased with the width of the interval used, but the difference between the two larger intervals, $25^\circ$ and $50^\circ$, was small. The contrast-response function approximates the form of the CDF for contrast levels in natural scenes~\ref{fig:laughlin1981-fig2}, indicating that the neurons uses the strategy for efficient coding suggested by information theory. Therefore, there is little redundancy associated with the LMC response to natural scenes. 
 
+As reduction of redundancy is a central concept in information theory, this study by Laughlin validates Barlow 1961's suggestion that redundancy reduction is an important principle in neural coding, and the procedure here may be used more widely among nervous systems.
+
+\begin{figure}[H]
+	\caption{
+		The contrast-response function of light adapted fly LMCs compared to the cumulative probability function for natural contrasts ($50^\circ$ interval).
+	}
+	\includegraphics[width=0.45\textwidth]{laughlin1981-fig2}
+	\label{fig:laughlin1981-fig2}
+\end{figure}
 
 % ---------------------------------------------------- %
 %                    LAUGHLIN 1981                     %
