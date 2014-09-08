@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  8 SEP 2014 01:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  8 SEP 2014 01:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -559,13 +559,13 @@ File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 ) [1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ] [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 263.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 244.
  [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 263.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 244.
 
 (./scribe.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 263.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 263.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 244.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 244.
 
 
 Package rerunfilecheck Warning: File `scribe.out' has changed.
@@ -573,26 +573,26 @@ Package rerunfilecheck Warning: File `scribe.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `scribe.out':
-(rerunfilecheck)             Before: D6043247D6F1381E805AD6AAA672EC3B;412
-(rerunfilecheck)             After:  9EB9E68D95CFE83E91C18B61D8AC5BB6;603.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 263.
+(rerunfilecheck)             Before: 9EB9E68D95CFE83E91C18B61D8AC5BB6;603
+(rerunfilecheck)             After:  41E4A2CCBF4243D13D917012DD5578E5;432.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 244.
  ) 
 Here is how much of TeX's memory you used:
- 9414 strings out of 493117
- 143010 string characters out of 6135433
+ 9404 strings out of 493117
+ 142869 string characters out of 6135433
  359932 words of memory out of 5000000
- 12464 multiletter control sequences out of 15000+600000
- 68595 words of font info for 270 fonts, out of 8000000 for 9000
+ 12460 multiletter control sequences out of 15000+600000
+ 68372 words of font info for 267 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,10n,43p,942b,588s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsection.4.2} has been referenced but does not 
+ 36i,10n,43p,942b,575s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{subsection.6.2} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.4.1} has been referenced but does not ex
+pdfTeX warning (dest): name{subsection.6.1} has been referenced but does not ex
 ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.6} has been referenced but does not exist, 
+replaced by a fixed one
 
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texl
@@ -604,10 +604,10 @@ mf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2014/texmf-dist/
 fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
 ype1/urw/palatino/uplr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/ur
 w/palatino/uplri8a.pfb>
-Output written on scribe.pdf (3 pages, 105606 bytes).
+Output written on scribe.pdf (3 pages, 105113 bytes).
 PDF statistics:
- 103 PDF objects out of 1000 (max. 8388607)
- 88 compressed objects within 1 object stream
- 25 named destinations out of 1000 (max. 500000)
- 56881 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 106 PDF objects out of 1000 (max. 8388607)
+ 91 compressed objects within 1 object stream
+ 23 named destinations out of 1000 (max. 500000)
+ 56897 words of extra memory for PDF output out of 61914 (max. 10000000)
 

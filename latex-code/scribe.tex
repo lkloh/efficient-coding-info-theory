@@ -182,6 +182,8 @@ Several concerns with the study are that capturing more than 90\% in ganglion ce
 
 Neurons carry and process information. Large monopolar cells (LMC's) are first order interneurons of the insect compound eye, with graded responses driven by small groups of receptors with the same field of view. The compressive intensity-response function of the receptors, combined with lateral and self-inhibition, adjusts the LMC sensitivity to the background intensity so that their responses code contrast fluctuations rather than absolute intensity. Laughlin 1981 shows that the interneuron's contrast-response function matches the range of contrasts encountered in natural scenes, which increases the efficiency with which information is encoded. 
 
+A fundamental limitation on neural coding is the restricted range of responses with which a neuron can represent the states of its inputs. The LMC cell's response range is limited by reversal potentials. If the sensitivities of a neuron are too high, inputs would often saturate the response, and informatio will be lost through clipping. If the sensitivities are too low, large parts of the response range are underutilized because they correspond to exceptionally large ranges of input. Information theory suggests that the most efficient way to apportion the neuron's limited response range is to encode inputs so that all response levels are used with equal frequency. Thus, information carried by the responses can be maximised because the information channel achieves its maximum entropy. 
+
 % ---------------------------------------------------- %
 %                    LAUGHLIN 1981                     %
 % ---------------------------------------------------- %
@@ -200,26 +202,6 @@ Neurons carry and process information. Large monopolar cells (LMC's) are first o
 
 
 
-% ---------------------------------------------------- %
-%                    	DISCUSSION                     %
-% ---------------------------------------------------- %
-
-\section{Discussion}
-
-\subsection{Subsection One}
-
-\lipsum[7] % Dummy text
-
-\subsection{Subsection Two}
-
-\lipsum[8] % Dummy text
-
-% ---------------------------------------------------- %
-%                    	DISCUSSION                     %
-% ---------------------------------------------------- %
-
-
-
 
 
 
@@ -230,16 +212,10 @@ Neurons carry and process information. Large monopolar cells (LMC's) are first o
 
 \begin{thebibliography}{99} 
 
-\bibitem[Simoncelli 2003]{Simoncelli:2003dg}
-Simoncelli, E.~P. (2003).
-\newblock  Vision and the statistics of the visual environment.
-\newblock {\em Current opinion in neurobiology}, 13(2), 144-149.
-
 \bibitem[Barlow 1961]{Barlow:1961dg}
 Barlow, H.~B. (1961).
 \newblock Possible Principles Underlying the Transformations of Sensory Messages.
 \newblock {\em Sensory communication}, (1961):217-234.
-
 
 \bibitem[Laughlin, 1981]{Laughlin:1981dg}
 Laughlin, S. (1981).
@@ -250,6 +226,11 @@ Laughlin, S. (1981).
 Nirenberg, S., Carcieri, S.~M., Jacobs, A.~L., \& Latham, P.~E. (2001).
 \newblock Retinal ganglion cells act largely as independent encoders.
 \newblock {\em Nature}, 411(6838), 698-701.
+
+\bibitem[Simoncelli 2003]{Simoncelli:2003dg}
+Simoncelli, E.~P. (2003).
+\newblock  Vision and the statistics of the visual environment.
+\newblock {\em Current opinion in neurobiology}, 13(2), 144-149.
  
 \end{thebibliography}
 
