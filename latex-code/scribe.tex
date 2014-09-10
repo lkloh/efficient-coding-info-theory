@@ -98,7 +98,18 @@
 
 \section{Introduction}
 
-\lettrine[nindent=0em,lines=3]{L} orem ipsum dolor sit amet, consectetur adipiscing elit.
+\lettrine[nindent=0em,lines=3]{I}nformation Theory represents the necessary basis of the modern information and communication technologies. Without it many of today’s technologies would be unavailable or severely less developed so one can freely say that Information Theory is inextricably woven into the life of a modern man and society.
+
+Information Theory uses bits as a standard choice of units for information.
+The core theorems of Information Theory set measure for the quantity of information, upper bound for lossless compression of information as well as the upper speed limit for information transfer trough a channel with or without noise. Even though Information Theory in its core does not give practical solutions for upper bounds that it sets, theoretical basis of it are vital step to practical implementation.  In general, the transfer of information should be fast, precise, energy efficient and it should work regardless the inevitable interference and noises in the channel. Information Theory presents the theoretical foundation so one can achieve such goals and it presents the necessary basis for coding and compressing all types of information (text, images, music, etc.). While coding information it is it is important that it is coded efficiently and this is where the Efficient Coding Hypothesis comes in. 
+
+Efficient Coding Hypothesis is one of the quantitative links between the statistical and structural properties our Visible surroundings. It is highly related to the Information Theory as well as Neuroscience and it has been in the main topic in some of the recent review articles as well as workshops. 
+From a Neuroscientific point of view this hypothesis states that a group of neurons should encode information as compactly as possible, so they can use the available resources in the most efficient way. This being said, one can now decouple this statement into two separate statements; one regarding the statistics of a response of single neuron and second regarding the responses of a group of neurons. 
+
+For the case of a single neuron, the output capacity should be fully utilized i.e. the information from one neuron should not be redundant to the information which is carried by the other neurons. 
+
+Testing the Efficient Coding Hypothesis is quite impractical as for the estimation of information-theoretic quantities large amounts of data are required and all of the common estimators of information are heavily biased. Nonetheless, successful experimental results have been achieved.
+
 
 
 % ---------------------------------------------------- %
@@ -113,7 +124,21 @@
 
 \section{Possible Principles Underlying the Transformations of Sensory Messages}
 
+H.B. Barlow in his article “Possible Principles Underlying the Transformations of Sensory Messages” discusses three hypotheses about sensory relays:
+\begin{itemize}
+	\item Sensory relays are for detecting, in the incoming messages, certain ``passwords'' that have a particular key significance.
+	\item Sensory relays are filters whose “pass characteristics” can be controlled in accordance with the requirements of the other part of the nervous system.
+	\item Sensory relays recode sensory messages, extracting signals of high relative entropy from the highly redundant sensory input.
+\end{itemize}
 
+Even though these ideas come from experimental results, not merely from abstract speculation this paper lacks discussion about the experimental evidence behind these ideas i.e. the first hypothesis comes from the realization that frog’s retina had an organization that made it severely unsuitable for the kind of tasks we use our eyes for. 
+
+In the "passwords" hypothesis, it is stated that specific classes of stimuli act as ``releasers'' and evoke specific responses. These classes of stimuli are thought of as “passwords” which have to be distinguished from other stimuli and it is suggested that their detection may be the important function of sensory relays. 
+
+For example, frog’s visual system has a limited range of visual responses. A moving object elicits a sequence of reactions which can be anything between alert for the frog to hopping forward and snapping at it. 
+
+In the Controlled Pass-Characteristic Hypothesis sensitivity of one type of stimulus might be increased while another is decreased, or if this hypothesis is combined with the ``password'' hypothesis the whole characteristic of relay could change, so that, in effect, the ``password'' is altered. 
+Write about redundancy reducing hypothesis. 
 
 % ---------------------------------------------------- %
 %                      BARLOW 1961                     %
@@ -218,6 +243,40 @@ To test this hypothesis, Laughlin compared contrast-response functions with cont
 % ---------------------------------------------------- %
 
 \section{Vision and the Statistics of the Visual Environment}
+
+Eero P. Simoncelli in his paper titled ``Vision and the statistics of the visual environment'' brings several criticisms about Efficient Coding Hypothesis. His review puts stress on the efficient coding articles published in the last several years. The author argues some misconceptions about the theory or variants of theory behind Efficient Coding Hypothesis. Several criticisms are regarding experimental and fundamental issues of the Efficient Coding Hypothesis.
+
+\subsection{Criticisms}
+
+First issue which this review rises is that the efficient coding of visual information is not important. The base of this criticism lies in questioning the purpose of vision. The author argues that the purpose of vision is not to encode and reconstruct the visual world. However, it is not mentioned how the extracted information is being used afterwards. 
+Second criticism of the Efficient Coding Hypothesis is that the Information Theory from Neuroscientific standpoint is not important because brain does not work with bits. 
+
+Next criticism of the Efficient Coding Hypothesis touches the experimental data of multi neuron recordings. Some data show correlation as well as synchronization or some other form of statistical dependency between neurons.  However, the author disproves this criticism by saying that the experimental data did not use naturalistic stimuli and thus the data is not directly relevant to the hypothesis. Even in the case of a naturalistic stimulus the hypothesis states that the system tends to be independent. 
+
+Furthermore, the Efficient Coding Hypothesis is criticized based on the comparison between the numbers of retinal ganglion cells to the number of neurons in the primary visual cortex. It is argued that the number of neurons which are used to process sensory information is expanding as the information goes deeper into the system thus brain increases redundancy by itself.  It is assumed that the coding capacity of all neurons is the same. Still, increased number of neurons does not always yield redundancy as different neurons have different properties i.e. cortical neurons have slower firing rate and they tend to have more complex temporal dynamic properties. The redundancy for retinal and V1 neurons has not yet been experimentally compared a similar comparison in auditory system demonstrated the reduction of redundancy. 
+The theory behind Efficient Coding Hypothesis uses several assumptions – it strongly dependent on probability distribution of natural images and the definition of the neural response.  This is the most fundamental problem for the Efficient Coding Hypothesis. In a usual scenario the distribution of inputs is not defined but it is assumed to be represented with a collection of calibrated images. Also, while applying the hypothesis one must explicitly denote which neurons are used to satisfy it. 
+
+The last criticism of Efficient Coding Hypothesis discussed in this paper is that the commonly used versions of the theory ignore noise and other simplistic physical constraints. Even though this criticism is a valid one it is not looked upon as a fatal one. 
+
+\subsection{Testing the hypothesis}
+
+Efficient Coding Hypothesis, even though being about 50 years old, is only being more explored. Today, we have greater knowledge of early sensory processing, better mathematical and engineering tools so we can manipulate with more complex statistical models and we can gather and process large amounts of data used in experimental stimuli and statistical purposes. 
+There are two basic approaches for testing the Efficient Coding Hypothesis. Frist one focuses on examining statistical properties of neural responses under natural stimuli. On the other hand the second one focuses on using statistical properties of natural images to constrain and derive a model for the early sensory processing.
+
+In the last few years researchers have been able to measure the efficiency in several different ways. Results of those studies vary – some studies confirm the Efficient Coding Hypothesis and the others seem to be highly inconsistent with the proposed hypothesis.  In example, a study conducted on cats and monkeys has shown that firing rate distributions of cat’s visual V1 and monkey’s inferotemporal (IT) neurons is exponential under naturalistic conditions and this yields optimal information transmission for a fixed average rate of firing. Furthermore, another study with monkey’s IT neurons found that only minority could be described with an exponential firing distribution. Later, it was argued that exponential distribution is a correct solution only in noise-free cases (cite 28,39,40). 
+
+In a study presented in (cite 41) it was shown that retinal ganglion cells show strong firing correlations and that the observed patterns could provide useful information.  Article by (cite 23) adds that retinal ganglions cells act as an independent encoders. Similar result for V1 neurons was found by (cite 42) where it was stated that V1 neurons are almost independent under non-natural stimuli. Results mentioned so far can seem not in line with the Efficient Coding Hypothesis as one would expect the level of independency to degrade for non-natural stimuli. 
+
+(cite 44 and 45 ) suggest that visual system shows better performance while input is a naturalistic stimulant. 
+
+Even though the connection has not yet been completely established, Efficient Coding Hypothesis suggests that optimal characterization of neural system will be while using natural stimuli.
+
+On the other hand, the other method of testing the Efficient Coding Hypothesis is to derive a model for efficient coding of the environment and afterwards to compare it with the observed psychological data. This model is highly constrained with linear filtering and second order statistical modeling. In the last few years, a couple of authors have established a connection between higher order statistical model and linear filtering.
+
+Finally, it is worth mentioning that several authors successfully applied Efficient Coding Hypothesis to adaptive processes.
+
+The recent interest in Efficient Coding Hypothesis has given interesting theoretical and experimental results. After all this being said it does seem improbable that Efficient Coding Hypothesis will be sufficient and the only principle for the understanding of sensory system design but it is clear that this hypothesis will play an important role.
+
 
 % ---------------------------------------------------- %
 %                     SIMONCELLI 2003                  %
