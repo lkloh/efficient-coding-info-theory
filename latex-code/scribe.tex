@@ -126,51 +126,46 @@ Barlow 1961 discusses three hypotheses about sensory relays:
 	\item Sensory relays are filters whose "pass characteristics" can be controlled in accordance with the requirements of the other part of the nervous system.
 	\item Sensory relays recode sensory messages, extracting signals of high relative entropy from the highly redundant sensory input.
 \end{itemize}
+His paper is not a discussion of the physiological mechanisms of sensory pathways, but an attempt to formulate ideas about operations which these mechanisms do. 
 
-In the "passwords" hypothesis, it is stated that specific classes of stimuli act as "releasers" and evoke specific responses. These classes of stimuli are thought of as "passwords" which have to be distinguished from other stimuli and it is suggested that their detection may be the important function of sensory relays. 
+In Hypothesis 1, specific classes of stimuli act as "releasers" and evoke specific responses. These classes of stimuli are thought of as "passwords" which have to be distinguished from other stimuli and it is suggested that their detection may be the important function of sensory relays. For instance, a frog's visual system has a limited range of visual responses. A moving object elicits a sequence of reactions, such as the frog going into alert, or hopping forward and snapping at it. The hypothesis says that since animals respond differently to specific stimuli, their sensory pathways must have mechanisms for detecting such stimuli and discriminating between them. 
 
-For example, frog's visual system has a limited range of visual responses. A moving object elicits a sequence of reactions which can be anything between alert for the frog to hopping forward and snapping at it. 
-The first, "password" , hypothesis says that, since animals respond differently to specific stimuli, they sensory pathways must have mechanisms for detecting such stimuli and discriminating between them. 
+In Hypothesis 2, sensitivity of one type of stimulus might be increased while another is decreased. Combined with Hypothesis 1, this means the whole characteristic of relay could change, so that, in effect, the "password" is altered. Thus, relays act as control points at which the flow of information is modulated according to the requirements of the other parts of the nervous system.
 
-In the Controlled Pass-Characteristic Hypothesis sensitivity of one type of stimulus might be increased while another is decreased, or if this hypothesis is combined with the "password" hypothesis the whole characteristic of relay could change, so that, in effect, the "password" is altered. 
+Hypothesis 1 argued about existence of preset mechanisms for detecting and passing on restricted classes of key signals. Hypothesis 2 postulated that the acceptance or rejection of messages might be controlled from somewhere else - either be a temporary change or a permanent adjustment for the sensory relays. The remaining question is: is the current input new information? If not, it should be marked as redundant and rejected. 
 
-The second hypothesis really says that relays act as control points at which the flow of information is modulated according to the requirements of the other parts of the nervous system.
-
-Before going to the last hypothesis let us sum up the key points of the first two. The first hypothesis argued about existence of preset mechanisms for detecting and passing on restricted classes of key signals. The second hypothesis postulated that the acceptance or rejection of messages might be controlled from somewhere else - it can either be a temporary change or a permanent adjustment for the sensory relays. This being said, only one thing remains to be discussed - is current input a new information? If it it is not then it should be marked as redundant and rejected. However, before stating the third hypothesis we need to introduce several assumptions:
-
+Several assumptions need to be made for Hypothesis 3:
 \begin{itemize}
-\item For current purposes sensory pathways are noiseless and they use discrete time signals
-\item The discrete time signals for any one fiber and time interval are impulses which can be either present or absent. This assumption makes the cod binary
-\item The last assumption is about the constraints of the capacity of a nerve pathway. Constraints are as follows: number of fibers F, number of discrete time intervals per second R and the average number of impulses per second in one fiber I. The last constraint is assumed to be variable. 
+	\item Sensory pathways are noiseless and use discrete time signals.
+	\item The discrete time signals for any one fiber and time interval are binary impulses which are either present or absent.
+	\item The capacity of a nerve pathway is constrained as such: number of fibers $F$ is constant, number of discrete time intervals per second $R$ is also constant, and the average number of impulses per second in one fiber $I$ is variable.
 \end{itemize}
-These assumptions are specific, simple they are not justified by any sort of experimental result but they are worth mentioning due to potential generality of the problem. Another criticism of these assumptions is presented by FitzHugh, 1957 where an evidence is produced which tells us that it is not important if a single impulse in the short time interval is there or not but the cumulative  number of impulses in a longer time interval is the one who carries the information. 
 
-Now, we can state the third and final hypothesis. The hypothesis is that sensory relays recode sensory messages so that their redundancy is reduced but very little information is lost. When we say "message" it is assumed to be a set of signals i.e. a particular pattern of impulses along a set of N fibers during the time interval T. This sent "message" has has it's quantitative attribute if the prior probability of receiving is known - information. If we denote $P_m$ as the probability of the message \textit{m} in such an ensemble, then the information attributed to \textit{m} is $H_{m}=-\log P_m $. The average informaton of all of the messages is 
+These assumptions are not justified by experimental results, but are mentioned due to potential generality of the problem. FitzHugh 1957 criticized these assumptions where an evidence is produced which tells us that it is not important if a single impulse in the short time interval is there or not but the cumulative number of impulses in a longer time interval is the one who carries the information. 
+
+Hypothesis 3 states that sensory relays recode sensory messages so that their redundancy is reduced, but little information is lost. A "message" it is assumed to be a set of signals, i.e. a particular pattern of impulses along a set of $N$ fibers during the time interval $T$. Denoting $\mathbb{P}_m$ as the probability of the message $m$ in such an ensemble, the information attributed to $m$ is $H_{m}=-\log \mathbb{P}_m$. The average informaton of all of the messages is thus the summation of information of all members of the ensemble.
 
 \begin{align} \label{eq:1}
-H_{av}= \sum_m P_m \log P_m.
+	H_{av}= \sum_m \mathbb{P}_m \log \mathbb{P}_m
 \end{align}
-This summation goes trough all of the members of the ensemble. The rate of flow of information is $H_{av}/T$, where T is the average duration of messages from the ensemble.
+
+The rate of flow of information is $\dfrac{H_{av}}{T}$, where $T$ is the average duration of messages from the ensemble.
 
 \begin{align} \label{eq:2}
-T = \sum_m P_m T_m.
+	T = \sum_m \mathbb{P}_m \mathbb{T}_m.
 \end{align}
 
-The capacity C of a channel is equal to the greatest rate of flow of information that can be passed down it. With respect to the earlier mentioned assumptions the capacity of a nerve pathway is
+The capacity $C$ of a channel is equal to the greatest rate of flow of information that can be passed down it. The capacity of a nerve pathway is
 
 \begin{align} \label{eq:3}
-C = - FR \left[\frac{I}{R} \log \frac{I}{R} +\left(1-\frac{I}{R} \right) \log  \left(1-\frac{I}{R} \right) \right].
+	C = - FR \left[\frac{I}{R} \log \frac{I}{R} +\left(1-\frac{I}{R} \right) \log  \left(1-\frac{I}{R} \right) \right].
 \end{align}
 
-The relative entropy of the messages is H/CT, and thus making the redundancy 1 minus the relative entropy $[1-(H/CT)]$.
-The channel capacity is maximum if I = R/2. In normal circumstances I is lower than R/2. This means that a decrease in redundancy of the sensory relay can only be done by decreasing the average frequency of impulses being used to transfer a message. 
-In another words, the third hypothesis says that for a given class of input messages, relays will choose the code that requires the smallest average expenditure of impulses in the output signal i.e. it economizes the impulses.
+The relative entropy of the messages is $\dfrac{H}{CT}$, and thus making the redundancy $[1-(H/CT)]$. The channel capacity is maximum if $I = \dfrac{R}2$. In normal circumstances $I < \dfrac{R}{2}$, thus a decrease in redundancy of the sensory relay can only be done by decreasing the average frequency of impulses being used to transfer a message. Therefore, for a given class of input messages, relays will choose the code that requires the smallest average expenditure of impulses in the output signal. Hence, reduction of redundancy is an important principle guiding the organization of sensory messages and it is carried out at relays in the sensory pathways.
 
-The third hypothesis says that the reduction of redundancy is an important principle guiding the organization of sensory messages and it is carried out at relays in the sensory pathways.
+The main difference between the last hypothesis and the first two is that the first two consist of possible principles for selecting some sensory messages while rejecting others. The selected messages are considered to be infrequent, and all of the rejected messages would be classified in the same way, thus disregarding a large part of the data. Hypothesis 3, however, preserves the given information.
 
-The main difference between the last hypothesis and the first two is that the first two are consisted of possible principles for selecting some sensory messages while rejecting others, the selected messages are considered to be rather infrequent and all of the rejected messages would be classified in the same way. This means that the first two hypothesis would disregard a large part of the data. The emphasis of the third hypothesis, in contrast to the other two, is on preserving the given information.
 
-In the end, if somebody thinks about sensory relays and what are they used for the three hypothesis discussed in this paper give an good answer to that question. However, this paper does not present a discussion of the physiological mechanisms of sensory pathways but it is an attempt to formulate ideas about operations which these mechanisms do. 
 
 % ---------------------------------------------------- %
 %                	NIRENBERG 2001                     %
