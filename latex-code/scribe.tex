@@ -106,7 +106,7 @@ Although Information Theory does not give practical solutions for upper bounds t
 
 The Efficient Coding Hypothesis is one of the quantitative links between the statistical and structural properties our visible surroundings. It is a core theory in Information Theory and has inspired new directions in neuroscience. This hypothesis suggests that a group of neurons should encode information as compactly as possible in order to maximize efficient utilization of resources, meaning that the information carried by one neuron should not be redundant to the information which is carried by the other neurons. 
 
-Testing the Efficient Coding Hypothesis is impractical as estimating information-theoretic quantities requires large amounts of data, and common estimators of information are heavily biased. Therefore, it is hard to achieve a good estimation from any set of given data. Nonetheless, successful experimental results have been achieved, which will be described in the following sections.
+Testing the Efficient Coding Hypothesis is impractical as estimating information-theoretic quantities requires large amounts of data, and common estimators of information are heavily biased. Therefore, it is hard to achieve a good estimation from any set of given data. Nonetheless, successful experimental results have been achieved, which will be described in this paper.
 
 % ---------------------------------------------------- %
 %                   	INTRODUCTION                   %
@@ -165,8 +165,54 @@ The relative entropy of the messages is $\dfrac{H}{CT}$, and thus making the red
 
 The main difference between the last hypothesis and the first two is that the first two consist of possible principles for selecting some sensory messages while rejecting others. The selected messages are considered to be infrequent, and all of the rejected messages would be classified in the same way, thus disregarding a large part of the data. Hypothesis 3, however, preserves the given information.
 
+In the next section, we present a paper by Simoncelli 2003 on critiques of the efficient coding hypothesis. 
 
 
+
+
+
+
+% ---------------------------------------------------- %
+%                     SIMONCELLI 2003                  %
+% ---------------------------------------------------- %
+
+\section{Vision and the Statistics of the Visual Environment}
+
+In his paper Simoncelli has several criticisms about articles relating to the Efficient Coding Hypothesis that were published in the last several years. He argues some misconceptions about the theory behind Efficient Coding Hypothesis, and also criticizes some experimental results.
+
+\subsection{Criticisms of hypothesis}
+
+\noindent\textbf{The purpose of Vision}
+
+Firstly, Simoncelli suggests that the efficient coding of visual information is not important, as the purpose of vision is not to encode and reconstruct the visual world. The hypothesis does not take into account how the information that has been extracted is to be used, which could be an advantage as one does not need to specify what is being represented, or a limitation as goals are relevant for visual processing. There are other, more complete theories such as Bayesian estimation which take the statistical structure of the environment and goal into account.
+
+\noindent\textbf{Relevance of Information Theory}
+
+The Efficient Coding Hypothesis is not important because brain does not work with bits as an unit of information. However, the definition of information is relevant to the brain; bits are merely a standard choice of unit for information.
+
+\noindent\textbf{Experimental Observed Dependency}
+
+Some experimental data from multi-neuron recordings show correlation, synchronization, or other forms of statistical dependency between neurons. However, most of these data came from experiments that did not use naturalistic stimuli. Also, other studies suggest that responses to natural stimuli in the primary visual cortex (V1) are relatively independent. 
+
+\noindent\textbf{Over-representation in cortex}
+
+Critics argue that the number of neurons devoted to processing sensory information seems to expand as one goes deeper into the system, suggesting that the brain increases redundancy. However, this argument assumes incorrectly. that the coding capacity of all neurons is the same. 
+
+\noindent\textbf{Definition of input and output}
+
+The Efficient Coding Hypothesis depends on the assumptions about the probability distribution of natural images and the definition of the neural response, both of which are unconstrained. When applying the hypothesis, one must be careful about the definitions used in order to satisfy it. For instance, the input distribution is assumed to be well represented by a collection of calibrated 'naturalistic' images. The type of neurons used must also be clearly stated.
+
+\subsection{Testing the Hypothesis}
+
+Although the Efficient Coding Hypothesis is already 50 years old, it is only now being more widely explored today, due to better information on neural signal processing, and better mathematical and engineering tools to process large amounts of experimental data.
+
+The two basic approaches for testing the Efficient Coding Hypothesis are to focus on examining statistical properties of neural responses under natural stimuli, or using statistical properties of natural images to constrain and derive a model for the early sensory processing.
+
+In the following sections, we present in-depth discussions of two such studies which support the hypothesis. 
+
+% ---------------------------------------------------- %
+%                     SIMONCELLI 2003                  %
+% ---------------------------------------------------- %
 
 
 
@@ -177,11 +223,9 @@ The main difference between the last hypothesis and the first two is that the fi
 
 \section{Retinal ganglion cells act largely as independent encoders}
 
-\footnotesize
 Correlated firing among neurons is widespread in the visual system, but its importance for encoding visual information is unclear. To study this, Nirenberg et. al., 2001 presented the retina with natural stimuli and computed the responses of the output cells, the ganglion cells. They used information theoretic techniques to measure the amount of information about the stimuli that can be obtained from the cells under correlated firing and non-correlated firing. They found that more than 90\% of the information about the stimuli can be obtained from the cells with uncorrelated firing, suggesting that ganglion cells act largely independently to encode information, simplifying the problem of decoding their activity. 
 
-\normalsize
-Nirenberg et. al., 2001 stimulated pairs of isolated mouse retina using natural movies. The stimuli were each 7 seconds long and repeated 300 times, and the ganglion cell responses were recorded. Data used had to be clean of contaminating spikes from other cells, and that both responses had to have average firing rates. 
+To perform the study, Nirenberg et. al., 2001 stimulated pairs of isolated mouse retina using natural movies. The stimuli were each 7 seconds long and repeated 300 times, and the ganglion cell responses were recorded. Data used had to be clean of contaminating spikes from other cells, and that both responses had to have average firing rates. 
 
 To find the degree of correlated activity for each pair, the excess correlated fraction (ECF) was found. ECF is the fraction of correlated spikes produced by the pair above chance, taking into account correlations induced by the stimulus. The ECFs ranged from -1\% to 34\%. 
 
@@ -264,52 +308,18 @@ To test this hypothesis, Laughlin compared contrast-response functions with cont
 
 
 
-% ---------------------------------------------------- %
-%                     SIMONCELLI 2003                  %
-% ---------------------------------------------------- %
-
-\section{Vision and the Statistics of the Visual Environment}
-
-In his paper Simoncelli has several criticisms about articles relating to the Efficient Coding Hypothesis that were published in the last several years. He argues some misconceptions about the theory behind Efficient Coding Hypothesis, and also criticizes some experimental results.
-
-\subsection{Criticisms of hypothesis}
-
-\noindent\textbf{The purpose of Vision}
-
-Firstly, Simoncelli suggests that the efficient coding of visual information is not important, as the purpose of vision is not to encode and reconstruct the visual world. The hypothesis does not take into account how the information that has been extracted is to be used, which could be an advantage as one does not need to specify what is being represented, or a limitation as goals are relevant for visual processing. There are other, more complete theories such as Bayesian estimation which take the statistical structure of the environment and goal into account.
-
-\noindent\textbf{Relevance of Information Theory}
-
-The Efficient Coding Hypothesis is not important because brain does not work with bits as an unit of information. However, the definition of information is relevant to the brain; bits are merely a standard choice of unit for information.
-
-\noindent\textbf{Experimental Observed Dependency}
-
-Some experimental data from multi-neuron recordings show correlation, synchronization, or other forms of statistical dependency between neurons. However, most of these data came from experiments that did not use naturalistic stimuli. Also, other studies suggest that responses to natural stimuli in the primary visual cortex (V1) are relatively independent. 
-
-\noindent\textbf{Over-representation in cortex}
-
-Critics argue that the number of neurons devoted to processing sensory information seems to expand as one goes deeper into the system, suggesting that the brain increases redundancy. However, this argument assumes incorrectly. that the coding capacity of all neurons is the same. 
-
-\noindent\textbf{Definition of input and output}
-
-The Efficient Coding Hypothesis depends on the assumptions about the probability distribution of natural images and the definition of the neural response, both of which are unconstrained. When applying the hypothesis, one must be careful about the definitions used in order to satisfy it. For instance, the input distribution is assumed to be well represented by a collection of calibrated 'naturalistic' images. The type of neurons used must also be clearly stated.
-
-\subsection{Testing the Hypothesis}
-
-Although the Efficient Coding Hypothesis is already 50 years old, it is only now being more widely explored today, due to better information on neural signal processing, and better mathematical and engineering tools to process large amounts of experimental data.
-
-The two basic approaches for testing the Efficient Coding Hypothesis are to focus on examining statistical properties of neural responses under natural stimuli, or using statistical properties of natural images to constrain and derive a model for the early sensory processing.
 
 % ---------------------------------------------------- %
-%                     SIMONCELLI 2003                  %
+%                      CONCLUSIONS                     %
 % ---------------------------------------------------- %
-
-
-
 
 \section{Conclusions}
 
 Recent interest in Efficient Coding Hypothesis has given interesting theoretical and experimental results. They suggest that neural system reduce redundancy by extracting signals of high relative entropy. For instance, Laughlin 1981 showed that the entropy of a neuron’s limited response range is maximized by encoding inputs so that all response levels are used with equal frequency. Thus, natural stimuli optimize the neuron's response. While it is improbable that the Efficient Coding Hypothesis is the the only principle behind sensory system design, it is clear that it plays an important role.
+
+% ---------------------------------------------------- %
+%                      CONCLUSIONS                     %
+% ---------------------------------------------------- %
 
 
 % ---------------------------------------------------- %
