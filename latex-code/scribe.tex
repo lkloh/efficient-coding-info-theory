@@ -50,7 +50,7 @@
 %                   	TITLE                          %
 % ---------------------------------------------------- %
 
-\title{\vspace{-15mm}\fontsize{24pt}{10pt}\selectfont\textbf{Efficient Coding Hypothesis and an introduction to information Theory}} % Article title
+\title{\vspace{-15mm}\fontsize{24pt}{10pt}\selectfont\textbf{Efficient Coding Hypothesis and an Introduction to Information Theory}} % Article title
 \author{Lay Kuan Loh \& Mihovil Bartulovic}
 \date{\today}
 
@@ -75,7 +75,7 @@
 
 \begin{abstract}
 
-\noindent The Efficient Coding Hypothesis, proposed by Barlow 1961, suggests that sensory relays recode sensory messages, so that their redundancy is reduced, but little information is lost. Coding to reduce redundancy not just eliminates wasteful neural activity, but also organizes sensory information such than an internal model of the environment causing the pst sensory inputs ins built up, while the current sensory situation is represented in a way that simplified the task of the parts of the nervours ssystem responsible for learning and conditioning. To investigate animals' sensory mechanisms, Barlow 1961 suggests that one examine the ways in which animals use their senses, as these ways are likely reflected in the design of the sense organs and their nervous pathways.
+\noindent The Efficient Coding Hypothesis, proposed by Barlow 1961, suggests that sensory relays recode sensory messages, so that their redundancy is reduced, but little information is lost. Coding to reduce redundancy not just eliminates wasteful neural activity, but also organizes sensory information such than an internal model of the environment causing the past sensory inputs to built up, while the current sensory situation is represented in a way that simplified the task of the part of the nervous system which is responsible for learning and conditioning. To investigate animal's sensory mechanisms, Barlow 1961 suggests that one should examine the ways in which animals use their senses, as these ways are likely reflected in the design of the sense organs and their nervous pathways.
 
 \end{abstract}
 
@@ -98,15 +98,15 @@
 
 \section{Introduction}
 
-\lettrine[nindent=0em,lines=3]{I}nformation Theory represents the necessary basis of the modern information and communication technologies. Without it, many of today's technologies would be unavailable or severely less developed.
+\lettrine[nindent=0em,lines=3]{I}nformation Theory represents the necessary basis of the modern information and communication technologies. Without it, many of today's technologies would be unavailable or less developed.
 
-Bits are the standard choice of unit in Information Theory. The core theorems of Information Theory set measures for the quantity of information, upper bound for loss-less compression of information, and the upper speed limit for information transfer trough a channel with or without noise. 
+Bits are the standard choice of unit in Information Theory. The core theorems of Information Theory set measures for the quantity of information, upper bound for loss-less compression of information, and for the highest speed for the information to be transferred trough a channel with or without noise. 
 
 Although Information Theory does not give practical solutions for upper bounds that it sets, the theory behind it is a vital step to practical implementation. The transfer of information should be fast, precise, energy efficient and it should work regardless the inevitable interference and noises in the channel. Information Theory presents the necessary basis for efficiently coding and compressing various types of information such as text, images, and sound. 
 
 The Efficient Coding Hypothesis is one of the quantitative links between the statistical and structural properties our visible surroundings. It is a core theory in Information Theory and has inspired new directions in neuroscience. This hypothesis suggests that a group of neurons should encode information as compactly as possible in order to maximize efficient utilization of resources, meaning that the information carried by one neuron should not be redundant to the information which is carried by the other neurons. 
 
-Testing the Efficient Coding Hypothesis is impractical as estimating information-theoretic quantities requires large amounts of data, and common estimators of information are heavily biased. Nonetheless, successful experimental results have been achieved, which will be described in the following sections.
+Testing the Efficient Coding Hypothesis is impractical as estimating information-theoretic quantities requires large amounts of data, and common estimators of information are heavily biased. Therefore, it is hard to achieve a good estimation from any set of given data. Nonetheless, successful experimental results have been achieved, which will be described in the following sections.
 
 % ---------------------------------------------------- %
 %                   	INTRODUCTION                   %
@@ -122,13 +122,13 @@ Testing the Efficient Coding Hypothesis is impractical as estimating information
 
 Barlow 1961 discusses three hypotheses about sensory relays:
 \begin{itemize}
-	\item Sensory relays detect certain "passwords" in incoming messages that have a particular key significance.
-	\item Sensory relays are filters whose "pass characteristics" can be controlled in accordance with the requirements of the other part of the nervous system.
-	\item Sensory relays recode sensory messages, extracting signals of high relative entropy from the highly redundant sensory input.
+	\item Hypothesis 1: Sensory relays detect certain "passwords" in incoming messages that have a particular key significance.
+	\item Hypothesis 2: Sensory relays are filters whose "pass characteristics" can be controlled in accordance with the requirements of the other part of the nervous system.
+	\item Hypothesis 3: Sensory relays recode sensory messages, extracting signals of high relative entropy from the highly redundant sensory input.
 \end{itemize}
-His paper is not a discussion of the physiological mechanisms of sensory pathways, but an attempt to formulate ideas about operations which these mechanisms do. 
+His paper is not a discussion of the physiological mechanisms of sensory pathways, but an attempt to formulate ideas about operations which these mechanisms do. The idea behind all of the three above mentioned hypothesis comes from experimental results, not merely from abstract speculations on this topic. 
 
-In Hypothesis 1, specific classes of stimuli act as "releasers" and evoke specific responses. These classes of stimuli are thought of as "passwords" which have to be distinguished from other stimuli and it is suggested that their detection may be the important function of sensory relays. For instance, a frog's visual system has a limited range of visual responses. A moving object elicits a sequence of reactions, such as the frog going into alert, or hopping forward and snapping at it. The hypothesis says that since animals respond differently to specific stimuli, their sensory pathways must have mechanisms for detecting such stimuli and discriminating between them. 
+In Hypothesis 1, specific classes of stimuli act as "releasers" and evoke specific responses. These classes of stimuli are thought of as "passwords" which have to be distinguished from other stimuli and it is suggested that their detection may be the important function of sensory relays. For instance, a frog's visual system has a limited range of visual responses. A moving object elicits a sequence of reactions, such as the frog going into alert, or hopping forward and snapping at it. This hypothesis says that since animals respond differently to specific stimuli, their sensory pathways must have mechanisms for detecting such stimuli and discriminating between them. 
 
 In Hypothesis 2, sensitivity of one type of stimulus might be increased while another is decreased. Combined with Hypothesis 1, this means the whole characteristic of relay could change, so that, in effect, the "password" is altered. Thus, relays act as control points at which the flow of information is modulated according to the requirements of the other parts of the nervous system.
 
@@ -143,7 +143,7 @@ Several assumptions need to be made for Hypothesis 3:
 
 These assumptions are not justified by experimental results, but are mentioned due to potential generality of the problem. FitzHugh 1957 criticized these assumptions where an evidence is produced which tells us that it is not important if a single impulse in the short time interval is there or not but the cumulative number of impulses in a longer time interval is the one who carries the information. 
 
-Hypothesis 3 states that sensory relays recode sensory messages so that their redundancy is reduced, but little information is lost. A "message" it is assumed to be a set of signals, i.e. a particular pattern of impulses along a set of $N$ fibers during the time interval $T$. Denoting $\mathbb{P}_m$ as the probability of the message $m$ in such an ensemble, the information attributed to $m$ is $H_{m}=-\log \mathbb{P}_m$. The average informaton of all of the messages is thus the summation of information of all members of the ensemble.
+Hypothesis 3 states that sensory relays recode sensory messages so that their redundancy is reduced, but little information is lost. A "message" it is assumed to be a set of signals, i.e. a particular pattern of impulses along a set of $N$ fibers during the time interval $T$. Denoting $\mathbb{P}_m$ as the probability of the message $m$ in such an ensemble, the information attributed to $m$ is $H_{m}=-\log \mathbb{P}_m$. The average information of all of the messages is thus the summation of information of all members of the ensemble.
 
 \begin{align} \label{eq:1}
 	H_{av}= \sum_m \mathbb{P}_m \log \mathbb{P}_m
@@ -195,7 +195,7 @@ To measure the amount of information the pairs of ganglion cells carried about t
 \end{align}
 
 
-where $\mathbb{P}(r_1,r_2)$ is found by taking $\mathbb{P}(r_1,r_2) = \sum_s \mathbb{P}(r_1,r_2|s)\mathbb{P}(s)$, and $\mathbb{P}(s)$ is the probability that a given stimulus segment $s$ occured. 
+where $\mathbb{P}(r_1,r_2)$ is found by taking $\mathbb{P}(r_1,r_2) = \sum_s \mathbb{P}(r_1,r_2|s)\mathbb{P}(s)$, and $\mathbb{P}(s)$ is the probability that a given stimulus segment $s$ occurred. 
 
 To examine how important correlation is in encoding visual information, the amount of information that would be lost if the correlations in the responses of the pair of ganglion cells were ignored was examined. To ignore the correlations, the conditional probability distributions of the two responses, $\mathbb{P}(r_1,r_2|s)$, as the product of their individual probability distributions, $\mathbb{P}(r_1|s)$ and $\mathbb{P}(r_2|s)$. $\mathbb{P}(r_1|s)\mathbb{P}(r_1|s)$ to estimate the probability of a stimulus given a response. As $\mathbb{P}(r_1|s)\mathbb{P}(r_1|s)$ is not quite the true distribution, using it should lead to a loss of information. 
 
@@ -215,7 +215,7 @@ The amount of information in bits lost, $\Delta I$, is given by
 		&- \sum_{r_1,r_2}\mathbb{P}(r_1,r_2) \log_2 \frac{\mathbb{P}(r_1,r_2)}{\sum_s \mathbb{P}(r_1|s)\mathbb{P}(r_2|s) \mathbb{P}(s)} 
 \end{align}
 
-$\Delta I$ is very small, as most pairs lost less than 10\% of information. If there were pairs of ganglion cells with higher degrees of correlation than the maximum 34\% observed, more information loss could have occured. This finding means that strategies used to decode ganglion cell activity, which treat the cells as independent encoders are reasonable, as they can capture more than 90\% of the information the cells carry. Furthermore, the activity of any given ganglion cell can be evaluated separately from other cells, without accounting for other cells in the population. This allows the problem of decoding population activity to be significanly simplified, as much less data is needed to analyze the uncorrelated case as opposed to the correlated case. 
+$\Delta I$ is very small, as most pairs lost less than 10\% of information. If there were pairs of ganglion cells with higher degrees of correlation than the maximum 34\% observed, more information loss could have occurred. This finding means that strategies used to decode ganglion cell activity, which treat the cells as independent encoders are reasonable, as they can capture more than 90\% of the information the cells carry. Furthermore, the activity of any given ganglion cell can be evaluated separately from other cells, without accounting for other cells in the population. This allows the problem of decoding population activity to be significantly simplified, as much less data is needed to analyze the uncorrelated case as opposed to the correlated case. 
 
 Several concerns with the study are that capturing more than 90\% in ganglion cell activity may not be enough to fully understand its activity. Also, perhaps correlation should not be ignored for the activity of a larger population of cells than just pairs of cells studied here. 
 
@@ -238,7 +238,7 @@ This study by Laughlin 1981 validates Barlow 1961's suggestion that redundancy r
 
 A neuron has a limited range of responses that can represent the states of its inputs. If its sensitivities are too high, inputs would saturate the response, and input outside the response range would be lost. If sensitivities are too low, the response range would correspond to very large ranges of input, and many parts of it would therefore be underutilized. Information theory suggests that the most efficient way to apportion the neuron's limited response range is to maximize entropy by encoding inputs so that all response levels are used with equal frequency. 
 
-In the simplest case, shown in Figure~\ref{fig:laughlin1981-fig1}, a neuron represents a single input parameter with a single output parameter. Maximum entropy is achieved when inputs are amplified in proportion to their expected frequeny of occurence. Larger portions of the response range are used for better resolution of common events, and smaller portions for improbable events. 
+In the simplest case, shown in Figure~\ref{fig:laughlin1981-fig1}, a neuron represents a single input parameter with a single output parameter. Maximum entropy is achieved when inputs are amplified in proportion to their expected frequency of occurrence. Larger portions of the response range are used for better resolution of common events, and smaller portions for improbable events. 
 
 \begin{figure}[H]
 	\caption{
@@ -248,7 +248,7 @@ In the simplest case, shown in Figure~\ref{fig:laughlin1981-fig1}, a neuron repr
 	\label{fig:laughlin1981-fig1}
 \end{figure}
 
-To test this hypothesis, Laughlin compared contrast-response functions with contrast levels measured in natural scenes, such as lakeside vegetation in LMCs. Relative intensities were measured accross the scenes with a detector with spectral sensitivity similar to a fly monopolar cell. Contrast values were obtained by dividing each scan into intervals. Within each interval, the intensity $\bar{I}$ was found, and for each data point the fluctuation about the mean $\delta I = I - \bar{I}$ was computed. Finally, the contrast $\displaystyle\frac{\Delta I}{\bar{I}}$ was found. The contrast-response function approximates the form of the cumulative distribution function for contrast levels in natural scenes~\ref{fig:laughlin1981-fig2}, indicating that the neurons uses the strategy for efficient coding suggested by information theory. Therefore, there is little redundancy associated with the LMC response to natural scenes. 
+To test this hypothesis, Laughlin compared contrast-response functions with contrast levels measured in natural scenes, such as lakeside vegetation in LMCs. Relative intensities were measured across the scenes with a detector with spectral sensitivity similar to a fly monopolar cell. Contrast values were obtained by dividing each scan into intervals. Within each interval, the intensity $\bar{I}$ was found, and for each data point the fluctuation about the mean $\delta I = I - \bar{I}$ was computed. Finally, the contrast $\displaystyle\frac{\Delta I}{\bar{I}}$ was found. The contrast-response function approximates the form of the cumulative distribution function for contrast levels in natural scenes~\ref{fig:laughlin1981-fig2}, indicating that the neurons uses the strategy for efficient coding suggested by information theory. Therefore, there is little redundancy associated with the LMC response to natural scenes. 
 
 \begin{figure}[H]
 	\caption{
@@ -270,23 +270,23 @@ To test this hypothesis, Laughlin compared contrast-response functions with cont
 
 \section{Vision and the Statistics of the Visual Environment}
 
-Simoncelli 2003 has several criticisms about articles relating to the Efficient Coding Hypothesis that were published in the last several years. He argues some misconceptions about the theory behind Efficient Coding Hypothesis, and also criticizes some experimental results.
+In his paper Simoncelli has several criticisms about articles relating to the Efficient Coding Hypothesis that were published in the last several years. He argues some misconceptions about the theory behind Efficient Coding Hypothesis, and also criticizes some experimental results.
 
 \subsection{Criticisms of hypothesis}
 
-Firstly, Simoncelli suggests that the efficient coding of visual information is not important, as purpose of vision is not to encode and reconstruct the visual world. However, he does not mention how visual extracted information is used. 
+Firstly, Simoncelli suggests that the efficient coding of visual information is not important, as the purpose of vision is not to encode and reconstruct the visual world. However, he does not mention how visual extracted information is used. 
 
-Secondly, the Efficient Coding Hypothesis is not important because brain does not work with bits. 
+Secondly, the Efficient Coding Hypothesis is not important because brain does not work with bits as an unit of information. 
 
-Experimental data of multi-neuron recordings show some form of statistical dependency between neurons. However, Simoncelli states that the experimental data did not use naturalistic stimuli, thus the data is not directly relevant to the hypothesis. When a naturalistic stimulus is used, experiments such as those described in Laughlin 1981 should that neurons monstly act independently. 
+Next criticism states that the experimental data of multi-neuron recordings show some form of statistical dependency between neurons. However, Simoncelli states that the experimental data did not use naturalistic stimuli, thus the data is not directly relevant to the hypothesis. When a naturalistic stimulus is used, experiments such as those described in Laughlin 1981 should that neurons mostly act independently. 
 
 Simonelli also suggests that the brain increases redundancy. Assuming that the coding capacity of all neurons is the same, since the number of neurons used to process sensory information increases as the information goes deeper into the brain, his suggestion follows. However, we point out that increased number of neurons does not always yield redundancy as different neurons have different properties. For instance, cortical neurons have slower firing rates and tend to have more complex temporal dynamic properties. The redundancy for retinal and V1 neurons has not yet been experimentally compared a similar comparison in auditory system demonstrated the reduction of redundancy. 
 
-The Efficient Coding Hypothesis is stronly dependent on the assumptions that the distribution of inputs is represented with a collection of calibrated images, and the definition of the neural response used. The accuracy of various studies which ignore noise and other simplistic physical constraints is therefore questionable. Although this criticism is valid, it is not fatal in the application of the Efficient Coding Hypothesis to neuroscience. 
+The Efficient Coding Hypothesis is strongly dependent on the assumptions that the distribution of inputs is represented with a collection of calibrated images, and the definition of the neural response used. The accuracy of various studies which ignore noise and other simplistic physical constraints is therefore questionable. Although this criticism is valid, it is not fatal in the application of the Efficient Coding Hypothesis to neuroscience. 
 
 \subsection{Testing the Efficient Coding Hypothesis}
 
-Although the Efficient Coding Hypothesis is already 50 years old, it is only being more widely explored today, due to better information on neural signal processing, and better mathematical and engineering tools to process large amounts of experimental data.
+Although the Efficient Coding Hypothesis is already 50 years old, it is only now being more widely explored today, due to better information on neural signal processing, and better mathematical and engineering tools to process large amounts of experimental data.
 
 The two basic approaches for testing the Efficient Coding Hypothesis are:
 \begin{itemize} 
@@ -294,15 +294,15 @@ The two basic approaches for testing the Efficient Coding Hypothesis are:
 	\item Using statistical properties of natural images to constrain and derive a model for the early sensory processing.
 \end{itemize}
 
-In the last few years researchers have been able to measure the efficiency in several different ways. Results of those studies vary – some studies confirm the Efficient Coding Hypothesis and the others seem to be highly inconsistent with the proposed hypothesis.  In example, a study conducted on cats and monkeys has shown that firing rate distributions of cat's visual V1 and monkey's inferotemporal (IT) neurons is exponential under naturalistic conditions and this yields optimal information transmission for a fixed average rate of firing. Furthermore, another study with monkey's IT neurons found that only minority could be described with an exponential firing distribution. Later, it was argued that exponential distribution is a correct solution only in noise-free cases (cite 28,39,40). 
+In the last few years researchers have been able to measure the efficiency in several different ways. Results of those studies vary – some studies confirm the Efficient Coding Hypothesis while the others seem to be highly inconsistent with the proposed hypothesis.  In example, a study conducted on cats and monkeys has shown that firing rate distributions of cat's visual V1 and monkey's inferotemporal (IT) neurons is exponential under naturalistic conditions and this yields optimal information transmission for a fixed average rate of firing. Furthermore, another study with monkey's IT neurons found that only minority could be described with an exponential firing distribution. Later, it was mentioned that exponential distribution is a correct solution only in noise-free cases. 
 
-In a study presented in (cite 41) it was shown that retinal ganglion cells show strong firing correlations and that the observed patterns could provide useful information.  Article by (cite 23) adds that retinal ganglion cells act as an independent encoders. Similar result for V1 neurons was found by (cite 42) where it was stated that V1 neurons are almost independent under non-natural stimuli. Results mentioned so far can seem not in line with the Efficient Coding Hypothesis as one would expect the level of independence to degrade for non-natural stimuli. 
+In a study presented in Meister \textit{et al.} it was shown that retinal ganglion cells show strong firing correlations and that the observed patterns could provide useful information.  Article by (cite 23) adds that retinal ganglion cells act as an independent encoders. Similar result for V1 neurons was found by Reich \textit{et al.} where it was stated that V1 neurons are almost independent under non-natural stimuli. Results mentioned so far can seem not in line with the Efficient Coding Hypothesis as one would expect the level of independence to degrade for non-natural stimuli. 
 
-(cite 44 and 45 ) suggest that visual system shows better performance while input is a naturalistic stimulant. 
+Lewen \textit{et al.} and Kern \textit{et al.} suggest that visual system shows better performance while input is a naturalistic stimulant. 
 
 Even though the connection has not yet been completely established, Efficient Coding Hypothesis suggests that optimal characterization of neural system will be while using natural stimuli.
 
-On the other hand, the other method of testing the Efficient Coding Hypothesis is to derive a model for efficient coding of the environment and afterwards to compare it with the observed psychological data. This model is highly constrained with linear filtering and second order statistical modeling. In the last few years, a couple of authors have established a connection between higher order statistical model and linear filtering.
+The other method of testing the Efficient Coding Hypothesis is to derive a model for efficient coding of the environment and afterwards to compare it with the observed psychological data. This model is highly constrained with linear filtering and second order statistical modeling. In the last few years, a couple of authors have established a connection between higher order statistical model and linear filtering.
 
 Finally, it is worth mentioning that several authors successfully applied Efficient Coding Hypothesis to adaptive processes.
 
