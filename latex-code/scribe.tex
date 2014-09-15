@@ -161,7 +161,7 @@ The capacity $C$ of a channel is equal to the greatest rate of flow of informati
 	C = - FR \left[\frac{I}{R} \log \frac{I}{R} +\left(1-\frac{I}{R} \right) \log  \left(1-\frac{I}{R} \right) \right].
 \end{align}
 
-The relative entropy of the messages is $\dfrac{H}{CT}$, and thus making the redundancy $[1-(H/CT)]$. The channel capacity is maximum if $I = \dfrac{R}2$. In normal circumstances $I < \dfrac{R}{2}$, thus a decrease in redundancy of the sensory relay can only be done by decreasing the average frequency of impulses being used to transfer a message. Therefore, for a given class of input messages, relays will choose the code that requires the smallest average expenditure of impulses in the output signal. Hence, reduction of redundancy is an important principle guiding the organization of sensory messages and it is carried out at relays in the sensory pathways.
+The relative entropy of the messages is $\dfrac{H}{CT}$, and thus making the redundancy $1-\dfrac{H}{CT}$. The channel capacity is maximum if $I = \dfrac{R}2$. In normal circumstances $I < \dfrac{R}{2}$, thus a decrease in redundancy of the sensory relay can only be done by decreasing the average frequency of impulses being used to transfer a message. Therefore, for a given class of input messages, relays will choose the code that requires the smallest average expenditure of impulses in the output signal. Hence, reduction of redundancy is an important principle guiding the organization of sensory messages and it is carried out at relays in the sensory pathways.
 
 The main difference between the last hypothesis and the first two is that the first two consist of possible principles for selecting some sensory messages while rejecting others. The selected messages are considered to be infrequent, and all of the rejected messages would be classified in the same way, thus disregarding a large part of the data. Hypothesis 3, however, preserves the given information.
 
@@ -274,48 +274,31 @@ In his paper Simoncelli has several criticisms about articles relating to the Ef
 
 \subsection{Criticisms of hypothesis}
 
-\textbf{The purpose of Vision}
+\noindent\textbf{The purpose of Vision}
 
 Firstly, Simoncelli suggests that the efficient coding of visual information is not important, as the purpose of vision is not to encode and reconstruct the visual world. The hypothesis does not take into account how the information that has been extracted is to be used, which could be an advantage as one does not need to specify what is being represented, or a limitation as goals are relevant for visual processing. There are other, more complete theories such as Bayesian estimation which take the statistical structure of the environment and goal into account.
 
-\textbf{Relevance of Information Theory}
+\noindent\textbf{Relevance of Information Theory}
 
 The Efficient Coding Hypothesis is not important because brain does not work with bits as an unit of information. However, the definition of information is relevant to the brain; bits are merely a standard choice of unit for information.
 
-\textbf{Experimentall Observed Dependency}
+\noindent\textbf{Experimental Observed Dependency}
 
-Some experimental data from multi-neuron recordings show correlation, synchronization, or other forms of statistical dependency between neurons.
+Some experimental data from multi-neuron recordings show correlation, synchronization, or other forms of statistical dependency between neurons. However, most of these data came from experiments that did not use naturalistic stimuli. Also, other studies suggest that responses to natural stimuli in the primary visual cortex (V1) are relatively independent. 
 
-However, most of these data came from experiments that did not use naturalistic stimuli. Also, other studies suggest that responses to natural stimuli in the primary visual cortex (V1) are relatively independent. Even if one were to observe dependencies in neural responses under natural stimulus conditions, the hypothesis states only that the system strives for independence; the constraints of neural pro- cessing may prevent this being achieved. Taking this into account, a more realistic expectation might be that successive stages of processing (e.g. steps along an ascending sensory pathway) should reduce statistical dependence.
+\noindent\textbf{Over-representation in cortex}
 
-Simonelli also suggests that the brain increases redundancy. Assuming that the coding capacity of all neurons is the same, since the number of neurons used to process sensory information increases as the information goes deeper into the brain, his suggestion follows. However, we point out that increased number of neurons does not always yield redundancy as different neurons have different properties. For instance, cortical neurons have slower firing rates and tend to have more complex temporal dynamic properties. The redundancy for retinal and V1 neurons has not yet been experimentally compared a similar comparison in auditory system demonstrated the reduction of redundancy. 
+Critics argue that the number of neurons devoted to processing sensory information seems to expand as one goes deeper into the system, suggesting that the brain increases redundancy. However, this argument assumes incorrectly. that the coding capacity of all neurons is the same. 
 
-The Efficient Coding Hypothesis is strongly dependent on the assumptions that the distribution of inputs is represented with a collection of calibrated images, and the definition of the neural response used. The accuracy of various studies which ignore noise and other simplistic physical constraints is therefore questionable. Although this criticism is valid, it is not fatal in the application of the Efficient Coding Hypothesis to neuroscience. 
+\noindent\textbf{Definition of input and output}
 
-\subsection{Testing the Efficient Coding Hypothesis}
+The Efficient Coding Hypothesis depends on the assumptions about the probability distribution of natural images and the definition of the neural response, both of which are unconstrained. When applying the hypothesis, one must be careful about the definitions used in order to satisfy it. For instance, the input distribution is assumed to be well represented by a collection of calibrated 'naturalistic' images. The type of neurons used must also be clearly stated.
+
+\subsection{Testing the Hypothesis}
 
 Although the Efficient Coding Hypothesis is already 50 years old, it is only now being more widely explored today, due to better information on neural signal processing, and better mathematical and engineering tools to process large amounts of experimental data.
 
-The two basic approaches for testing the Efficient Coding Hypothesis are:
-\begin{itemize} 
-	\item Focus on examining statistical properties of neural responses under natural stimuli, and 
-	\item Using statistical properties of natural images to constrain and derive a model for the early sensory processing.
-\end{itemize}
-
-In the last few years researchers have been able to measure the efficiency in several different ways. Results of those studies vary – some studies confirm the Efficient Coding Hypothesis while the others seem to be highly inconsistent with the proposed hypothesis.  In example, a study conducted on cats and monkeys has shown that firing rate distributions of cat's visual V1 and monkey's inferotemporal (IT) neurons is exponential under naturalistic conditions and this yields optimal information transmission for a fixed average rate of firing. Furthermore, another study with monkey's IT neurons found that only minority could be described with an exponential firing distribution. Later, it was mentioned that exponential distribution is a correct solution only in noise-free cases. 
-
-In a study presented in Meister \textit{et al.} it was shown that retinal ganglion cells show strong firing correlations and that the observed patterns could provide useful information.  Article by (cite 23) adds that retinal ganglion cells act as an independent encoders. Similar result for V1 neurons was found by Reich \textit{et al.} where it was stated that V1 neurons are almost independent under non-natural stimuli. Results mentioned so far can seem not in line with the Efficient Coding Hypothesis as one would expect the level of independence to degrade for non-natural stimuli. 
-
-Lewen \textit{et al.} and Kern \textit{et al.} suggest that visual system shows better performance while input is a naturalistic stimulant. 
-
-Even though the connection has not yet been completely established, Efficient Coding Hypothesis suggests that optimal characterization of neural system will be while using natural stimuli.
-
-The other method of testing the Efficient Coding Hypothesis is to derive a model for efficient coding of the environment and afterwards to compare it with the observed psychological data. This model is highly constrained with linear filtering and second order statistical modeling. In the last few years, a couple of authors have established a connection between higher order statistical model and linear filtering.
-
-Finally, it is worth mentioning that several authors successfully applied Efficient Coding Hypothesis to adaptive processes.
-
-The recent interest in Efficient Coding Hypothesis has given interesting theoretical and experimental results. After all this being said it does seem improbable that Efficient Coding Hypothesis will be sufficient and the only principle for the understanding of sensory system design but it is clear that this hypothesis will play an important role.
-
+The two basic approaches for testing the Efficient Coding Hypothesis are to focus on examining statistical properties of neural responses under natural stimuli, or using statistical properties of natural images to constrain and derive a model for the early sensory processing.
 
 % ---------------------------------------------------- %
 %                     SIMONCELLI 2003                  %
@@ -324,7 +307,9 @@ The recent interest in Efficient Coding Hypothesis has given interesting theoret
 
 
 
+\section{Conclusions}
 
+Recent interest in Efficient Coding Hypothesis has given interesting theoretical and experimental results. They suggest that neural system reduce redundancy by extracting signals of high relative entropy. For instance, Laughlin 1981 showed that the entropy of a neuron’s limited response range is maximized by encoding inputs so that all response levels are used with equal frequency. Thus, natural stimuli optimize the neuron's response. While it is improbable that the Efficient Coding Hypothesis is the the only principle behind sensory system design, it is clear that it plays an important role.
 
 
 % ---------------------------------------------------- %
