@@ -128,13 +128,13 @@ Testing the Efficient Coding Hypothesis is impractical as estimating information
 %                      BARLOW 1961                     %
 % ---------------------------------------------------- %
 
-\section{Possible Principles Underlying the Transformations of Sensory Messages}
+\section{Suggested hypotheses about how sensory messages are relayed}
 
 Barlow 1961 discusses three hypotheses about sensory relays:
 \begin{itemize}
 	\item Hypothesis 1: Sensory relays detect certain "passwords" in incoming messages that have a particular key significance.
 	\item Hypothesis 2: Sensory relays are filters whose "pass characteristics" can be controlled in accordance with the requirements of the other part of the nervous system.
-	\item Hypothesis 3: Sensory relays recode sensory messages, extracting signals of high relative entropy from the highly redundant sensory input.
+	\item Hypothesis 3: (Efficient Coding Hypothesis) Sensory relays recode sensory messages, extracting signals of high relative entropy from the highly redundant sensory input.
 \end{itemize}
 His paper is not a discussion of the physiological mechanisms of sensory pathways, but an attempt to formulate ideas about operations which these mechanisms do. The idea behind all of the three above mentioned hypothesis comes from experimental results, not merely from abstract speculations on this topic. 
 
@@ -186,11 +186,9 @@ In the next section, we present a paper by Simoncelli 2003 on critiques of the e
 %                     SIMONCELLI 2003                  %
 % ---------------------------------------------------- %
 
-\section{Vision and the Statistics of the Visual Environment}
+\section{A discussion of criticisms of the Efficient Coding Hypothesis as applied to neuroscience}
 
-In his paper Simoncelli has several criticisms about articles relating to the Efficient Coding Hypothesis that were published in the last several years. He argues some misconceptions about the theory behind Efficient Coding Hypothesis, and also criticizes some experimental results.
-
-\subsection{Criticisms of hypothesis}
+Simoncelli 2003 discusses several several criticisms made about articles relating to the Efficient Coding Hypothesis that were published in the last several years. He argues some misconceptions about the theory behind Efficient Coding Hypothesis, and also criticizes some experimental results.
 
 \noindent\textbf{The purpose of Vision}
 
@@ -235,55 +233,7 @@ In the following sections, we present in-depth discussions of two such studies w
 
 
 
-% ---------------------------------------------------- %
-%                	NIRENBERG 2001                     %
-% ---------------------------------------------------- %
 
-\section{Retinal ganglion cells act largely as independent encoders}
-
-Correlated firing among neurons is widespread in the visual system, but its importance for encoding visual information is unclear. To study this, Nirenberg et. al., 2001 presented the retina with natural stimuli and computed the responses of the output cells, the ganglion cells. They used information theoretic techniques to measure the amount of information about the stimuli that can be obtained from the cells under correlated firing and non-correlated firing. They found that more than 90\% of the information about the stimuli can be obtained from the cells with uncorrelated firing, suggesting that ganglion cells act largely independently to encode information, simplifying the problem of decoding their activity. 
-
-To perform the study, Nirenberg et. al., 2001 stimulated pairs of isolated mouse retina using natural movies. The stimuli were each 7 seconds long and repeated 300 times, and the ganglion cell responses were recorded. Data used had to be clean of contaminating spikes from other cells, and that both responses had to have average firing rates. 
-
-To find the degree of correlated activity for each pair, the excess correlated fraction (ECF) was found. ECF is the fraction of correlated spikes produced by the pair above chance, taking into account correlations induced by the stimulus. The ECFs ranged from -1\% to 34\%. 
-
-To measure the amount of information the pairs of ganglion cells carried about the stimuli when their correlations were taken into account, information theoretic techniques were used. Each movie was treated as a series of segments of fixed temporal length, with each segment regarded as a separate stimulus. The movie was presented several hundred times to generate a large set of responses (spike trains) to each segment. This allowed the authors to estimate the probability of getting a particular pair of responses given a particular movie segment - that is, to estimate $\mathbb{P}(r_1,r_2|s)$, where $r_1$ was the response of cell 1, $r_2$ was the response of cell 2 and $s$ was the movie segment. Given these conditional probabilities, the amount of information $I$ between the responses and the stimulus segments was found using the expression:
-
-
-\begin{align}\label{eq:info-theory}
-	I 
-		&= -\sum_{r_1,r_2}\mathbb{P}(r_1,r_2)\log_2\mathbb{P}(r_1,r_2) \\
-  		&+ \sum_s\mathbb{P}(s) \sum_{r_1,r_2}\mathbb{P}(r_1,r_2|s)\log_2\mathbb{P}(r_1,r_2|s)
-\end{align}
-
-
-where $\mathbb{P}(r_1,r_2)$ is found by taking $\mathbb{P}(r_1,r_2) = \sum_s \mathbb{P}(r_1,r_2|s)\mathbb{P}(s)$, and $\mathbb{P}(s)$ is the probability that a given stimulus segment $s$ occurred. 
-
-To examine how important correlation is in encoding visual information, the amount of information that would be lost if the correlations in the responses of the pair of ganglion cells were ignored was examined. To ignore the correlations, the conditional probability distributions of the two responses, $\mathbb{P}(r_1,r_2|s)$, as the product of their individual probability distributions, $\mathbb{P}(r_1|s)$ and $\mathbb{P}(r_2|s)$. $\mathbb{P}(r_1|s)\mathbb{P}(r_1|s)$ to estimate the probability of a stimulus given a response. As $\mathbb{P}(r_1|s)\mathbb{P}(r_1|s)$ is not quite the true distribution, using it should lead to a loss of information. 
-
-Therefore, the amount of independent information is given by
-
-\begin{align}
-	I_{IND} 
-		&= -\sum_{r_1,r_2}\mathbb{P}(r_1,r_2|s)\log_2\mathbb{P}(r_1|s)\mathbb{P}(r_2|s) \\
-		&+ \sum_s\mathbb{P}(s) \sum_{r_1,r_2}\mathbb{P}(r_1,r_2|s)\log_2\mathbb{P}(r_1|s)\mathbb{P}(r_2|s) 
-\end{align}
-
-The amount of information in bits lost, $\Delta I$, is given by 
-\begin{align}
-	\Delta I 
-		&= I - I_{IND} \\
-		&= \sum_s\mathbb{P}(s) \sum_{r_1,r_2}\mathbb{P}(r_1,r_2|s) \log_2 \frac{\mathbb{P}(r_1,r_2|s)}{\mathbb{P}(r_1|s)\mathbb{P}(r_2|s)} \\
-		&- \sum_{r_1,r_2}\mathbb{P}(r_1,r_2) \log_2 \frac{\mathbb{P}(r_1,r_2)}{\sum_s \mathbb{P}(r_1|s)\mathbb{P}(r_2|s) \mathbb{P}(s)} 
-\end{align}
-
-$\Delta I$ is very small, as most pairs lost less than 10\% of information. If there were pairs of ganglion cells with higher degrees of correlation than the maximum 34\% observed, more information loss could have occurred. This finding means that strategies used to decode ganglion cell activity, which treat the cells as independent encoders are reasonable, as they can capture more than 90\% of the information the cells carry. Furthermore, the activity of any given ganglion cell can be evaluated separately from other cells, without accounting for other cells in the population. This allows the problem of decoding population activity to be significantly simplified, as much less data is needed to analyze the uncorrelated case as opposed to the correlated case. 
-
-Several concerns with the study are that capturing more than 90\% in ganglion cell activity may not be enough to fully understand its activity. Also, perhaps correlation should not be ignored for the activity of a larger population of cells than just pairs of cells studied here. 
-
-% ---------------------------------------------------- %
-%                	NIRENBERG 2001                     %
-% ---------------------------------------------------- %
 
 
 
@@ -294,7 +244,7 @@ Several concerns with the study are that capturing more than 90\% in ganglion ce
 %                    LAUGHLIN 1981                     %
 % ---------------------------------------------------- %
 
-\section{A Simple Coding Procedure Enhances a Neuron's Information Capacity}
+\section{Evidence that a neuron maximizes its Information Capacity by encoding inputs to maximize entropy}
 
 This study by Laughlin 1981 validates Barlow 1961's suggestion that redundancy reduction is an important principle in neural coding. Laughlin that the receptors of large monopolar cells (LMCs), the first order interneurons of the insect compound eye, have a compressive intensity-response function corresponding to the background intensity. Instead of absolute intensity, the LMC's contrast-response function matches the range of contrasts encountered in natural scenes, which increases the efficiency.
 
@@ -327,6 +277,54 @@ While this study shows promising evidence for the Efficient Coding Hypothesis, i
 % ---------------------------------------------------- %
 
 
+% ---------------------------------------------------- %
+%                	NIRENBERG 2001                     %
+% ---------------------------------------------------- %
+
+\section{Using entropy of responses to determine that retinal ganglion cells act largely as independent encoders}
+
+Correlated firing among neurons is widespread in the visual system, but its importance for encoding visual information is unclear. To study this, Nirenberg et. al., 2001 presented the retina with natural stimuli and computed the responses of the output cells, the ganglion cells. They used information theoretic techniques to measure the amount of information about the stimuli that can be obtained from the cells under correlated firing and non-correlated firing. They found that more than 90\% of the information about the stimuli can be obtained from the cells with uncorrelated firing, suggesting that ganglion cells act largely independently to encode information, simplifying the problem of decoding their activity. 
+
+To perform the study, Nirenberg et. al., 2001 stimulated pairs of isolated mouse retina using natural movies. The stimuli were each 7 seconds long and repeated 300 times, and the ganglion cell responses were recorded. Data used had to be clean of contaminating spikes from other cells, and that both responses had to have average firing rates. 
+
+To find the degree of correlated activity for each pair, the excess correlated fraction (ECF) was found. ECF is the fraction of correlated spikes produced by the pair above chance, taking into account correlations induced by the stimulus. The ECFs ranged from -1\% to 34\%. 
+
+To measure the amount of information the pairs of ganglion cells carried about the stimuli when their correlations were taken into account, information theoretic techniques were used. Each movie was treated as a series of segments of fixed temporal length, with each segment regarded as a separate stimulus. The movie was presented several hundred times to generate a large set of responses (spike trains) to each segment. This allowed the authors to estimate the probability of getting a particular pair of responses given a particular movie segment - that is, to estimate $\mathbb{P}(r_1,r_2|s)$, where $r_1$ was the response of cell 1, $r_2$ was the response of cell 2 and $s$ was the movie segment. Given these conditional probabilities, the amount of information $I$ between the responses and the stimulus segments was found using the expression:
+
+
+\begin{align}\label{eq:info-theory}
+	I 
+		&= -\sum_{r_1,r_2}\mathbb{P}(r_1,r_2)\log_2\mathbb{P}(r_1,r_2) \\
+  		&+ \sum_s\mathbb{P}(s) \sum_{r_1,r_2}\mathbb{P}(r_1,r_2|s)\log_2\mathbb{P}(r_1,r_2|s)
+\end{align}
+
+where $\mathbb{P}(r_1,r_2)$ is found by taking $\mathbb{P}(r_1,r_2) = \sum_s \mathbb{P}(r_1,r_2|s)\mathbb{P}(s)$, and $\mathbb{P}(s)$ is the probability that a given stimulus segment $s$ occurred. 
+
+To examine how important correlation is in encoding visual information, the amount of information that would be lost if the correlations in the responses of the pair of ganglion cells were ignored was examined. To ignore the correlations, the conditional probability distributions of the two responses, $\mathbb{P}(r_1,r_2|s)$, as the product of their individual probability distributions, $\mathbb{P}(r_1|s)$ and $\mathbb{P}(r_2|s)$. $\mathbb{P}(r_1|s)\mathbb{P}(r_1|s)$ to estimate the probability of a stimulus given a response. As $\mathbb{P}(r_1|s)\mathbb{P}(r_1|s)$ is not quite the true distribution, using it should lead to a loss of information. 
+
+Therefore, the amount of independent information is given by
+
+\begin{align}
+	I_{IND} 
+		&= -\sum_{r_1,r_2}\mathbb{P}(r_1,r_2|s)\log_2\mathbb{P}(r_1|s)\mathbb{P}(r_2|s) \\
+		&+ \sum_s\mathbb{P}(s) \sum_{r_1,r_2}\mathbb{P}(r_1,r_2|s)\log_2\mathbb{P}(r_1|s)\mathbb{P}(r_2|s) 
+\end{align}
+
+The amount of information in bits lost, $\Delta I$, is given by 
+\begin{align}
+	\Delta I 
+		&= I - I_{IND} \\
+		&= \sum_s\mathbb{P}(s) \sum_{r_1,r_2}\mathbb{P}(r_1,r_2|s) \log_2 \frac{\mathbb{P}(r_1,r_2|s)}{\mathbb{P}(r_1|s)\mathbb{P}(r_2|s)} \\
+		&- \sum_{r_1,r_2}\mathbb{P}(r_1,r_2) \log_2 \frac{\mathbb{P}(r_1,r_2)}{\sum_s \mathbb{P}(r_1|s)\mathbb{P}(r_2|s) \mathbb{P}(s)} 
+\end{align}
+
+$\Delta I$ is very small, as most pairs lost less than 10\% of information. If there were pairs of ganglion cells with higher degrees of correlation than the maximum 34\% observed, more information loss could have occurred. This finding means that strategies used to decode ganglion cell activity, which treat the cells as independent encoders are reasonable, as they can capture more than 90\% of the information the cells carry. Furthermore, the activity of any given ganglion cell can be evaluated separately from other cells, without accounting for other cells in the population. This allows the problem of decoding population activity to be significantly simplified, as much less data is needed to analyze the uncorrelated case as opposed to the correlated case. 
+
+Several concerns with the study are that capturing more than 90\% in ganglion cell activity may not be enough to fully understand its activity. Also, perhaps correlation should not be ignored for the activity of a larger population of cells than just pairs of cells studied here. 
+
+% ---------------------------------------------------- %
+%                	NIRENBERG 2001                     %
+% ---------------------------------------------------- %
 
 
 % ---------------------------------------------------- %
